@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <h1>My Site</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/projects">Projects</a>
-        <a href="/blog">Blog</a>
-        <a href="/contact">Contact</a>
-      </nav>
-    </header>
+    {% include header.html %}
 
     <main>{{ content }}</main>
 
-    <footer>
-      <p>&copy; 2025 {{ site.author.name }}</p>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>

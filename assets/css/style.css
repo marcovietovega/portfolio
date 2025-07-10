@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 2rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #007acc;
+}
+
+.hero {
+  background: url("/assets/img/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  width: 60px;
+  height: 60px;
+  margin: 0 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons a:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.social-icons a i {
+  font-size: 2rem;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  background: #f8f8f8;
+  color: #555;
+}
+
+.jekyll-brand {
+  color: #cc0000;
+  font-weight: 600;
+}
+
+.jekyll-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0;
+  vertical-align: middle;
+}
