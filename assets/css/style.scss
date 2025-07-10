@@ -1,3 +1,5 @@
+---
+---
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 body {
@@ -46,7 +48,7 @@ body {
 }
 
 .hero {
-  background: url("/assets/img/hero.jpg") center/cover no-repeat;
+  background: url("{{ '/assets/img/hero.jpg' | relative_url }}") center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 6rem 2rem;
