@@ -9,3 +9,39 @@ author:
     github: "mv03790"
     instagram: "@mav03790"
     linkedin: "marcovieto"
+
+hero:
+  title: "Marco Vieto - Data Scientist"
+  subtitle: "Transforming data into insights and building solutions that drive impact."
+
+sections:
+  projects:
+    title: "Featured Projects"
+    subtitle: "Explore my latest data science and analytics projects"
+    cta_text: "View All Projects"
+    cta_link: "/projects"
+
+  blog:
+    title: "Latest Blog Posts"
+    subtitle: "Insights and thoughts on data science and technology"
+    cta_text: "View All Posts"
+    cta_link: "/blog"
+
+featured_projects:
+  - title: "Data Analysis Dashboard"
+    description: "Interactive dashboard built with Python and Plotly for real-time data visualization and analytics."
+    image: "project1.jpg"
+    tags: ["Python", "Plotly", "Pandas"]
+    link: "/projects/dashboard"
+
+  - title: "Machine Learning Model"
+    description: "Predictive model for customer behavior analysis using scikit-learn and advanced statistical methods."
+    image: "project2.jpg"
+    tags: ["Machine Learning", "Scikit-learn", "Statistics"]
+    link: "/projects/ml-model"
+
+  - title: "Database Optimization"
+    description: "Performance optimization of large-scale databases with advanced querying and indexing strategies."
+    image: "project3.jpg"
+    tags: ["SQL", "PostgreSQL", "Performance"]
+    link: "/projects/database-optimization"

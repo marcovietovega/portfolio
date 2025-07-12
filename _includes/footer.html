@@ -1,13 +1,56 @@
 <footer class="site-footer">
-  <p>
-    &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} — Built with
-    <span class="jekyll-brand">
-      <img
-        src="{{ '/assets/img/jekyll-icon.svg' | relative_url }}"
-        alt="Jekyll"
-        class="jekyll-icon"
-      />
-      Jekyll
-    </span>
-  </p>
+  <div class="footer-content">
+    <div class="footer-divider"></div>
+
+    <div class="footer-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/projects' | relative_url }}">Projects</a>
+      <a href="{{ '/blog' | relative_url }}">Posts</a>
+      <a href="{{ '/about' | relative_url }}">About Me</a>
+    </div>
+
+    <div class="footer-social">
+      <a
+        href="https://github.com/{{ site.author.social.github }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+      <a
+        href="https://linkedin.com/in/{{ site.author.social.linkedin }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a
+        href="mailto:{{ site.author.email }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-copyright">
+      <p>
+        &copy; {{ site.time | date: "%Y" }} Crafted by <strong>{{ site.author.name }}</strong>.
+        Built with
+        <span class="jekyll-brand">
+          <img
+            src="{{ '/assets/img/jekyll-icon.svg' | relative_url }}"
+            alt="Jekyll"
+            class="jekyll-icon"
+          />
+          Jekyll
+        </span>
+      </p>
+    </div>
+  </div>
 </footer>
