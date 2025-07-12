@@ -15,6 +15,9 @@ title: "Home"
       <a href="https://linkedin.com/in/{{ site.author.social.linkedin }}" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
+      <a href="mailto:{{ site.author.email }}" target="_blank" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
 
   </div>
