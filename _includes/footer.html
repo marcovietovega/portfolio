@@ -3,10 +3,10 @@
     <div class="footer-divider"></div>
 
     <div class="footer-nav">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/projects' | relative_url }}">Projects</a>
-      <a href="{{ '/blog' | relative_url }}">Posts</a>
-      <a href="{{ '/about' | relative_url }}">About Me</a>
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>Home</a>
+      <a href="{{ '/projects' | relative_url }}" {% if page.url contains '/projects' %}class="current"{% endif %}>Projects</a>
+      <a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' %}class="current"{% endif %}>Posts</a>
+      <a href="{{ '/about' | relative_url }}" {% if page.url contains '/about' %}class="current"{% endif %}>About Me</a>
     </div>
 
     <div class="footer-social">

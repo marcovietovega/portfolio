@@ -35,3 +35,10 @@
 .nav a:hover {
   color: #007acc;
 }
+
+.nav a.current {
+  color: #007acc;
+  font-weight: 600;
+  pointer-events: none;
+  cursor: default;
+}
