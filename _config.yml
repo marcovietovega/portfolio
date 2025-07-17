@@ -1,5 +1,4 @@
 title: "Marco Vieto Vega"
-description: "A sleek, modern Jekyll site for data science projects"
 baseurl: "/portfolio"
 url: "https://mv03790.github.io"
 author:
@@ -7,11 +6,10 @@ author:
   email: "mv03790@gmail.com"
   social:
     github: "mv03790"
-    instagram: "@mav03790"
     linkedin: "marcovieto"
 
 hero:
-  title: "Marco Vieto - Data Scientist"
+  title: "Marco Vieto Vega - Data Scientist"
   subtitle: "Transforming data into insights and building solutions that drive impact."
 
 sections:
@@ -40,8 +38,33 @@ featured_projects:
     tags: ["Machine Learning", "Scikit-learn", "Statistics"]
     link: "/projects/ml-model"
 
-  - title: "Database Optimization"
-    description: "Performance optimization of large-scale databases with advanced querying and indexing strategies."
+  - title: "Crash Insights NZ"
+    description: "Interactive dashboard built with R Shiny analyzing vehicle crash data in New Zealand with dynamic filters and comprehensive visualizations."
     image: "project3.jpg"
-    tags: ["SQL", "PostgreSQL", "Performance"]
-    link: "/projects/database-optimization"
+    tags: ["R", "Shiny", "Data Visualization"]
+    link: "https://mv03790.shinyapps.io/crashinsightsnz/"
+
+featured_blog_posts:
+  - title: "Getting Started with Python for Data Analysis"
+    description: "A comprehensive guide to using Python libraries like Pandas and NumPy for effective data analysis workflows."
+    image: "blog1.jpg"
+    date: "Dec 10, 2024"
+    category: "Data Science"
+    link: "/blog/python-data-analysis"
+    external: false
+
+  - title: "Understanding Model Validation Techniques"
+    description: "Deep dive into cross-validation, train-test splits, and other essential techniques for robust model evaluation."
+    image: "blog2.jpg"
+    date: "Dec 5, 2024"
+    category: "Machine Learning"
+    link: "/blog/model-validation"
+    external: false
+
+  - title: "Starting My Data Science Portfolio (And Writing About It)"
+    description: "In my first post, I introduced the project I'm building for my data science portfolio and explained the architecture and tools I'm using."
+    image: "blog3.jpg"
+    date: "Jul 14, 2025"
+    category: "Project Development"
+    link: "https://marcovietovega.substack.com/p/starting-my-data-science-portfolio"
+    external: true

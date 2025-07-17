@@ -1,0 +1,97 @@
+/* Footer Styles */
+.site-footer {
+  background: #f8f9fa;
+  padding: 0rem 0 2rem;
+  margin-top: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #007acc;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer-social a {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.footer-social a:hover {
+  background: #007acc;
+  color: white;
+  transform: translateY(-2px);
+  border-color: #007acc;
+}
+
+.footer-social a i {
+  font-size: 1.5rem;
+}
+
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background: #dee2e6;
+  margin: 1.5rem auto;
+}
+
+.footer-divider:first-child {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.footer-copyright {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+.jekyll-brand {
+  color: #cc0000;
+  font-weight: 600;
+}
+
+.jekyll-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0;
+  vertical-align: middle;
+}

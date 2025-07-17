@@ -30,7 +30,7 @@ title: "Home"
     
     <div class="cards-grid">
       {% for project in site.featured_projects %}
-      <div class="card">
+      <div class="card clickable-card" data-href="{{ project.link }}">
         <div class="card-image">
           <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="{{ project.title }}">
         </div>
@@ -48,7 +48,7 @@ title: "Home"
     </div>
     
     <div class="section-cta">
-      <a href="{{ site.sections.projects.cta_link }}" class="btn-primary">{{ site.sections.projects.cta_text }}</a>
+      <a href="{{ site.sections.projects.cta_link | relative_url }}" class="btn-primary">{{ site.sections.projects.cta_text }}</a>
     </div>
   </div>
 </section>
@@ -59,45 +59,25 @@ title: "Home"
     <p class="section-subtitle">{{ site.sections.blog.subtitle }}</p>
     
     <div class="cards-grid">
-      <div class="card blog-card">
+      {% for post in site.featured_blog_posts %}
+      <div class="card blog-card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
+        <div class="card-image">
+          <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="{{ post.title }}">
+        </div>
         <div class="card-content">
           <div class="blog-meta">
-            <span class="blog-date">Dec 10, 2024</span>
-            <span class="blog-category">Data Science</span>
+            <span class="blog-date">{{ post.date }}</span>
+            <span class="blog-category">{{ post.category }}</span>
           </div>
-          <h3 class="card-title">Getting Started with Python for Data Analysis</h3>
-          <p class="card-description">A comprehensive guide to using Python libraries like Pandas and NumPy for effective data analysis workflows.</p>
-          <a href="/blog/python-data-analysis" class="read-more">Read More →</a>
+          <h3 class="card-title">{{ post.title }}</h3>
+          <p class="card-description">{{ post.description }}</p>
         </div>
       </div>
-      
-      <div class="card blog-card">
-        <div class="card-content">
-          <div class="blog-meta">
-            <span class="blog-date">Dec 5, 2024</span>
-            <span class="blog-category">Machine Learning</span>
-          </div>
-          <h3 class="card-title">Understanding Model Validation Techniques</h3>
-          <p class="card-description">Deep dive into cross-validation, train-test splits, and other essential techniques for robust model evaluation.</p>
-          <a href="/blog/model-validation" class="read-more">Read More →</a>
-        </div>
-      </div>
-      
-      <div class="card blog-card">
-        <div class="card-content">
-          <div class="blog-meta">
-            <span class="blog-date">Nov 28, 2024</span>
-            <span class="blog-category">Visualization</span>
-          </div>
-          <h3 class="card-title">Creating Effective Data Visualizations</h3>
-          <p class="card-description">Best practices for designing clear, compelling visualizations that tell your data's story effectively.</p>
-          <a href="/blog/data-visualization" class="read-more">Read More →</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     
     <div class="section-cta">
-      <a href="{{ site.sections.blog.cta_link }}" class="btn-primary">{{ site.sections.blog.cta_text }}</a>
+      <a href="{{ site.sections.blog.cta_link | relative_url }}" class="btn-primary">{{ site.sections.blog.cta_text }}</a>
     </div>
   </div>
 </section>

@@ -24,5 +24,21 @@
     <main>{{ content }}</main>
 
     {% include footer.html %}
+
+    <script>
+      // Make cards clickable
+      document.addEventListener("DOMContentLoaded", function () {
+        const clickableCards = document.querySelectorAll(".clickable-card");
+
+        clickableCards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            const href = this.getAttribute("data-href");
+            if (href) {
+              window.open(href, "_blank");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
