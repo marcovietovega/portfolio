@@ -38,6 +38,13 @@
   cursor: default;
 }
 
+.footer-nav a.current {
+  color: #007acc;
+  font-weight: 600;
+  pointer-events: none;
+  cursor: default;
+}
+
 .footer-social {
   display: flex;
   justify-content: center;
