@@ -1,6 +1,14 @@
 title: "Marco Vieto Vega"
 baseurl: "/portfolio"
 url: "https://mv03790.github.io"
+
+# Disable default GitHub Pages theme
+theme: null
+
+# Jekyll configuration for GitHub Pages
+sass:
+  sass_dir: _sass
+
 author:
   name: "Marco Vieto Vega"
   email: "mv03790@gmail.com"
