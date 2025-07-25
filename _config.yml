@@ -67,8 +67,8 @@ featured_blog_posts:
     description: "In this post, I share how I pulled real posts from Bluesky, cleaned the text, stored everything in a database, and made progress on my portfolio site."
     image: "blog2.jpg"
     date: "14 Jul, 2025"
-    link: "/blog/model-validation"
-    external: false
+    link: "https://marcovietovega.substack.com/p/building-senticheck-collecting-data"
+    external: true
     tags: ["NLP", "PostgresSQL", "Python", "Jekyll"]
 
   - title: "Starting My Data Science Portfolio (And Writing About It)"
