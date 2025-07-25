@@ -1,35 +1,55 @@
 /* Header Styles */
 .site-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem 0;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  background: transparent;
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .logo a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .nav a {
-  margin-left: 2rem;
-  font-weight: 500;
-  color: #333;
+  margin-left: 6rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #fff;
   text-decoration: none;
   transition: color 0.2s ease;
+  letter-spacing: 1px;
+}
+
+.nav a:first-child {
+  margin-left: 0;
 }
 
 .nav a:hover {
@@ -37,14 +57,7 @@
 }
 
 .nav a.current {
-  color: #007acc;
-  font-weight: 600;
-  pointer-events: none;
-  cursor: default;
-}
-
-.nav a.current {
-  color: #007acc;
+  color: #4db3fa;
   font-weight: 600;
   pointer-events: none;
   cursor: default;
