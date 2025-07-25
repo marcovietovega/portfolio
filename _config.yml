@@ -1,6 +1,6 @@
 title: "MVV"
 baseurl: "/portfolio"
-url: "https://mv03790.github.io"
+url: "https://marcovietovega.github.io"
 
 # Disable default GitHub Pages theme
 theme: null
@@ -13,7 +13,7 @@ author:
   name: "Marco Vieto Vega"
   email: "mv03790@gmail.com"
   social:
-    github: "mv03790"
+    github: "marcovietovega"
     linkedin: "marcovieto"
 
 hero:
