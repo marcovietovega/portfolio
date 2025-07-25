@@ -60,13 +60,13 @@ featured_blog_posts:
     date: "Dec 10, 2024"
     category: "Data Science"
     link: "/blog/python-data-analysis"
-    external: false
-    tags: ["Python", "Data Science"]
+    external:
+    tags: ["Apache Airflow", "Python", "NLP", "Hugging Face"]
 
   - title: "Building Senticheck: Collecting Data, Cleaning Text, and ..."
     description: "In this post, I share how I pulled real posts from Bluesky, cleaned the text, stored everything in a database, and made progress on my portfolio site."
     image: "blog2.jpg"
-    date: "14 Jul, 2025"
+    date: "24 Jul, 2025"
     link: "https://marcovietovega.substack.com/p/building-senticheck-collecting-data"
     external: true
     tags: ["NLP", "PostgresSQL", "Python", "Jekyll"]

@@ -44,11 +44,20 @@
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .hero {
@@ -60,13 +69,30 @@
   }
 
   .header-flex {
-    padding: 0 1rem;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .logo {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem;
   }
 
   .nav a {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-align: center;
   }
 }
