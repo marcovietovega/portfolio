@@ -1,8 +1,5 @@
 <header class="site-header">
   <div class="container header-flex">
-    <h1 class="logo">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </h1>
     <nav class="nav">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>HOME</a>
       <a href="{{ '/projects' | relative_url }}" {% if page.url contains '/projects' %}class="current"{% endif %}>PROJECTS</a>
