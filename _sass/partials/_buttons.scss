@@ -10,37 +10,18 @@
 /* Primary Button */
 .btn-primary {
   display: inline-block;
-  background: #007acc;
-  color: white;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
   padding: 0.8rem 2rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
-  border: 2px solid #007acc;
 }
 
 .btn-primary:hover {
-  background: #005999;
-  border-color: #005999;
-  transform: translateY(-2px);
-}
-
-/* Project Button */
-.btn-project {
-  display: inline-block;
   background: #007acc;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: 2px solid #007acc;
-}
-
-.btn-project:hover {
-  background: #005999;
-  border-color: #005999;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
   transform: translateY(-2px);
 }

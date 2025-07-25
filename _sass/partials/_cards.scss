@@ -134,9 +134,11 @@
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   letter-spacing: 0.02em;
+  cursor: default;
 }
 
 .tag:hover {
   background: #007acc;
+  color: #fff;
   box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
 }

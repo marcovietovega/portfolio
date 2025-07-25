@@ -18,7 +18,8 @@ author:
 
 hero:
   title: "Marco Vieto Vega"
-  subtitle: "Transforming data into insights and building solutions that drive impact"
+  subtitle: "Data Scientist"
+  description: "Transforming data into insights and building solutions that drive impact"
 
 sections:
   projects:
@@ -60,6 +61,7 @@ featured_blog_posts:
     category: "Data Science"
     link: "/blog/python-data-analysis"
     external: false
+    tags: ["Python", "Data Science"]
 
   - title: "Understanding Model Validation Techniques"
     description: "Deep dive into cross-validation, train-test splits, and other essential techniques for robust model evaluation."
@@ -68,6 +70,7 @@ featured_blog_posts:
     category: "Machine Learning"
     link: "/blog/model-validation"
     external: false
+    tags: ["Machine Learning", "Validation"]
 
   - title: "Starting My Data Science Portfolio (And Writing About It)"
     description: "In my first post, I introduced the project I'm building for my data science portfolio and explained the architecture and tools I'm using."
@@ -76,3 +79,4 @@ featured_blog_posts:
     category: "Project Development"
     link: "https://marcovietovega.substack.com/p/starting-my-data-science-portfolio"
     external: true
+    tags: ["Portfolio", "Writing"]
