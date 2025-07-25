@@ -61,7 +61,7 @@ featured_blog_posts:
     category: "Data Science"
     link: "/blog/python-data-analysis"
     external:
-    tags: ["Apache Airflow", "Python", "NLP", "Hugging Face"]
+    tags: ["Apache Airflow", "NLP", "HuggingFace"]
 
   - title: "Building Senticheck: Collecting Data, Cleaning Text, and ..."
     description: "In this post, I share how I pulled real posts from Bluesky, cleaned the text, stored everything in a database, and made progress on my portfolio site."
