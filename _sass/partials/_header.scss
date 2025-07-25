@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 2.5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   background: transparent;
@@ -30,6 +30,10 @@
 .logo a {
   color: #fff;
   text-decoration: none;
+}
+
+.logo a:hover {
+  color: #007acc;
 }
 
 .nav {

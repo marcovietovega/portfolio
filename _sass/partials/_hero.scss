@@ -34,20 +34,21 @@
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
+  color: #aaa;
 }
 
 /* Social Icons */
 .social-icons a {
   width: 60px;
   height: 60px;
-  margin: 0 0.5rem;
+  margin: 2.5rem 1.5rem;
   background: rgba(255, 255, 255, 0.9);
   color: #333;
   border-radius: 50%;
@@ -61,7 +62,7 @@
 }
 
 .social-icons a:hover {
-  background: #fff;
+  background: #007acc;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
