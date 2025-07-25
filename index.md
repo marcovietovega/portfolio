@@ -61,14 +61,13 @@ title: "Home"
     
     <div class="cards-grid">
       {% for post in site.featured_blog_posts %}
-      <div class="card blog-card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
+      <div class="card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
         <div class="card-image">
           <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="{{ post.title }}">
         </div>
         <div class="card-content">
-          <div class="blog-meta">
-            <span class="blog-date">{{ post.date }}</span>
-            <span class="blog-category">{{ post.category }}</span>
+          <div class="card-meta">
+            <span class="card-date">{{ post.date }}</span>
           </div>
           <h3 class="card-title">{{ post.title }}</h3>
           <p class="card-description">{{ post.description }}</p>
