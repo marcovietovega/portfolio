@@ -1,6 +1,7 @@
 /* Footer Styles */
 .site-footer {
-  background: #f8f9fa;
+  background: #10151a;
+  color: #fff;
   padding: 0rem 0 2rem;
   margin-top: 0;
 }
@@ -13,18 +14,20 @@
 }
 
 .footer-nav {
+  flex: 1;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 8rem;
+  margin: 2rem 0;
 }
 
 .footer-nav a {
-  color: #333;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
   transition: color 0.2s ease;
+  letter-spacing: 1px;
 }
 
 .footer-nav a:hover {
@@ -32,14 +35,7 @@
 }
 
 .footer-nav a.current {
-  color: #007acc;
-  font-weight: 600;
-  pointer-events: none;
-  cursor: default;
-}
-
-.footer-nav a.current {
-  color: #007acc;
+  color: #4db3fa;
   font-weight: 600;
   pointer-events: none;
   cursor: default;
@@ -53,31 +49,33 @@
 }
 
 .footer-social a {
-  width: 50px;
-  height: 50px;
-  background: #fff;
+  width: 60px;
+  height: 60px;
+  margin: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
   color: #333;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 1px solid #e9ecef;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .footer-social a:hover {
   background: #007acc;
-  color: white;
-  transform: translateY(-2px);
-  border-color: #007acc;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .footer-social a i {
   font-size: 1.5rem;
 }
 
-.footer-divider {
+.divider {
   width: 80%;
   height: 1px;
   background: #dee2e6;
@@ -90,7 +88,7 @@
 }
 
 .footer-copyright {
-  color: #666;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
 }
 
