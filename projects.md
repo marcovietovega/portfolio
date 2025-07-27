@@ -3,6 +3,8 @@ layout: default
 title: "Projects"
 ---
 
+<div class="projects-page">
+
 <section class="page-header">
   <div class="container">
     <h1 class="page-title">My Projects</h1>
@@ -83,3 +85,5 @@ title: "Projects"
     </div>
   </div>
 </section>
+
+</div>
