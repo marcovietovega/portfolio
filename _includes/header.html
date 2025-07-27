@@ -1,10 +1,10 @@
 <header class="site-header">
   <div class="container header-flex">
-    <nav class="nav">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>HOME</a>
-      <a href="{{ '/projects' | relative_url }}" {% if page.url contains '/projects' %}class="current"{% endif %}>PROJECTS</a>
-      <a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' %}class="current"{% endif %}>BLOG</a>
-      <a href="{{ '/about' | relative_url }}" {% if page.url contains '/about' %}class="current"{% endif %}>ABOUT ME</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}" aria-label="Home" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>HOME</a>
+      <a href="{{ '/projects' | relative_url }}" aria-label="Projects" {% if page.url contains '/projects' %}class="current"{% endif %}>PROJECTS</a>
+      <a href="{{ '/blog' | relative_url }}" aria-label="Blog" {% if page.url contains '/blog' %}class="current"{% endif %}>BLOG</a>
+      <a href="{{ '/about' | relative_url }}" aria-label="About Me" {% if page.url contains '/about' %}class="current"{% endif %}>ABOUT ME</a>
     </nav>
   </div>
 </header>

@@ -2,18 +2,19 @@
   <div class="footer-content">
     <div class="footer-divider"></div>
 
-    <div class="footer-nav">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>HOME</a>
-      <a href="{{ '/projects' | relative_url }}" {% if page.url contains '/projects' %}class="current"{% endif %}>PROJECTS</a>
-      <a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' %}class="current"{% endif %}>BLOG</a>
-      <a href="{{ '/about' | relative_url }}" {% if page.url contains '/about' %}class="current"{% endif %}>ABOUT ME</a>
+    <div class="footer-nav" aria-label="Footer navigation">
+      <a href="{{ '/' | relative_url }}" aria-label="Home" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>HOME</a>
+      <a href="{{ '/projects' | relative_url }}" aria-label="Projects" {% if page.url contains '/projects' %}class="current"{% endif %}>PROJECTS</a>
+      <a href="{{ '/blog' | relative_url }}" aria-label="Blog" {% if page.url contains '/blog' %}class="current"{% endif %}>BLOG</a>
+      <a href="{{ '/about' | relative_url }}" aria-label="About Me" {% if page.url contains '/about' %}class="current"{% endif %}>ABOUT ME</a>
     </div>
 
-    <div class="footer-social">
+    <div class="footer-social" aria-label="Social links">
       <a
         href="https://github.com/{{ site.author.social.github }}"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="GitHub profile"
         title="GitHub"
       >
         <i class="fab fa-github"></i>
@@ -22,6 +23,7 @@
         href="https://linkedin.com/in/{{ site.author.social.linkedin }}"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
         title="LinkedIn"
       >
         <i class="fab fa-linkedin"></i>
@@ -30,6 +32,7 @@
         href="mailto:{{ site.author.email }}"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Send email"
         title="Email"
       >
         <i class="fas fa-envelope"></i>
@@ -44,7 +47,7 @@
         <span class="jekyll-brand">
           <img
             src="{{ '/assets/img/jekyll-icon.svg' | relative_url }}"
-            alt="Jekyll"
+            alt="Jekyll static site generator logo"
             class="jekyll-icon"
           />
           Jekyll
