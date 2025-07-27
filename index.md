@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Home"
+title: "Marco Vieto Vega – Data Scientist"
 description: "Marco Vieto Vega - Data Scientist. Transforming data into insights and building solutions that drive impact."
+og_image: /assets/img/og-image.png
 ---
 
 <section class="hero" style="background: url('{{ '/assets/img/hero.jpg' | relative_url }}') center/cover no-repeat;">
