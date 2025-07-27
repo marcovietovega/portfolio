@@ -241,14 +241,6 @@ img {
   }
 }
 
-/* Focus States for Accessibility */
-a:focus,
-button:focus,
-.clickable-card:focus {
-  outline: 2px solid #007acc;
-  outline-offset: 2px;
-}
-
 /* Print Styles */
 @media print {
   .page-header::before,

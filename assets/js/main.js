@@ -47,40 +47,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Smooth hover effects for cards
-  const cards = document.querySelectorAll(".card, .project-card, .blog-card");
-  cards.forEach((card) => {
-    card.addEventListener("mouseenter", function () {
-      this.style.transform = "translateY(-8px)";
-      this.style.transition = "transform 0.3s ease";
-    });
-
-    card.addEventListener("mouseleave", function () {
-      this.style.transform = "translateY(0)";
-    });
-  });
-
   // Add loading animation
   window.addEventListener("load", function () {
     document.body.classList.add("loaded");
   });
 
   // Intersection Observer for animations
-  const animatedElements = document.querySelectorAll(".fade-in, .slide-in");
+  const animatedElements = document.querySelectorAll(
+    ".fade-in, .slide-in, .section-reveal"
+  );
   const animationObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
+          entry.target.classList.add("revealed");
         }
       });
     },
     {
       threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
     }
   );
 
   animatedElements.forEach((el) => animationObserver.observe(el));
+
+  // Enhanced hover effects for cards
+  const cards = document.querySelectorAll(".card, .project-card, .blog-card");
+  cards.forEach((card) => {
+    card.addEventListener("mouseenter", function () {
+      this.style.transform = "translateY(-8px) scale(1.02)";
+      this.style.boxShadow = "0 20px 40px rgba(0, 0, 0, 0.3)";
+    });
+
+    card.addEventListener("mouseleave", function () {
+      this.style.transform = "translateY(0) scale(1)";
+      this.style.boxShadow = "0 4px 32px rgba(0, 0, 0, 0.18)";
+    });
+  });
 
   // Mobile menu toggle
   const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
