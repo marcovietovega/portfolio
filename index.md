@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 
-<section class="hero">
+<section class="hero" style="background: url('{{ '/assets/img/hero.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="hero-content">
     <h1>{{ site.hero.title }}</h1>
     <h2>{{ site.hero.subtitle}}</h2>

@@ -116,15 +116,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Preload critical images
-  const criticalImages = [
-    "/assets/img/hero.jpg",
-    "/assets/img/projects-bg.jpg",
-    "/assets/img/about-bg.jpg",
-  ];
-
-  criticalImages.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
+  // Preload critical images - removed to avoid Jekyll build errors
 });

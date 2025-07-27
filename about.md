@@ -5,7 +5,7 @@ title: "About Me"
 
 <div class="about-page">
 
-<section class="page-header">
+<section class="page-header" style="background: url('{{ '/assets/img/about-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">About Me</h1>
     <p class="page-subtitle">Data scientist passionate about turning complex data into actionable insights</p>

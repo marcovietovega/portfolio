@@ -3,11 +3,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
-// Hero background image (needs to be in main file for Jekyll processing)
-.hero {
-  background: url("{{ '/assets/img/hero.jpg' | relative_url }}") center/cover
-    no-repeat;
-}
+// Background images will be handled in HTML
 
 // Base styles
 @import "partials/base";

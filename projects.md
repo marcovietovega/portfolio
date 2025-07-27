@@ -5,7 +5,7 @@ title: "Projects"
 
 <div class="projects-page">
 
-<section class="page-header">
+<section class="page-header" style="background: url('{{ '/assets/img/projects-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">My Projects</h1>
     <p class="page-subtitle">A collection of data science and analytics projects showcasing my skills and expertise.</p>

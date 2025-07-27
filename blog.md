@@ -5,7 +5,7 @@ title: "Blog"
 
 <div class="blog-page">
 
-<section class="page-header">
+<section class="page-header" style="background: url('{{ '/assets/img/blog-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">My Blog</h1>
     <p class="page-subtitle">Insights, tutorials, and thoughts on data science, machine learning, and analytics</p>

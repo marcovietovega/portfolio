@@ -100,6 +100,37 @@ body.loaded .loading-screen {
   animation: fadeInUp 0.8s ease-out;
 }
 
+/* Homepage Hero Animations */
+.hero-content h1 {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-content h2 {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-content p {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.hero-content .social-icons {
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+/* Section Title Animations */
+.section-title {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.section-subtitle {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* CTA Button Animations */
+.section-cta {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -113,27 +144,75 @@ body.loaded .loading-screen {
 
 /* Staggered Card Animations */
 .cards-grid .card:nth-child(1) {
-  animation-delay: 0.1s;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 .cards-grid .card:nth-child(2) {
-  animation-delay: 0.2s;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 .cards-grid .card:nth-child(3) {
-  animation-delay: 0.3s;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
 }
 
 .projects-grid .project-card:nth-child(1) {
-  animation-delay: 0.1s;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 .projects-grid .project-card:nth-child(2) {
-  animation-delay: 0.2s;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .blog-grid .blog-card:nth-child(1) {
-  animation-delay: 0.1s;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 .blog-grid .blog-card:nth-child(2) {
-  animation-delay: 0.2s;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* About Page Animations */
+.about-content {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.about-stats .stat-item:nth-child(1) {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+.about-stats .stat-item:nth-child(2) {
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+.about-stats .stat-item:nth-child(3) {
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+.about-stats .stat-item:nth-child(4) {
+  animation: fadeInUp 0.8s ease-out 0.7s both;
+}
+
+/* Experience Section Animations */
+.experience-grid .experience-category:nth-child(1) {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+.experience-grid .experience-category:nth-child(2) {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* Skills/Topics/Interests Section Animations */
+.skills-grid .skill-category:nth-child(1),
+.topics-grid .topic-category:nth-child(1),
+.interests-grid .interest-category:nth-child(1) {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+.skills-grid .skill-category:nth-child(2),
+.topics-grid .topic-category:nth-child(2),
+.interests-grid .interest-category:nth-child(2) {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+.skills-grid .skill-category:nth-child(3),
+.topics-grid .topic-category:nth-child(3),
+.interests-grid .interest-category:nth-child(3) {
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+.skills-grid .skill-category:nth-child(4),
+.topics-grid .topic-category:nth-child(4),
+.interests-grid .interest-category:nth-child(4) {
+  animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 /* Performance Optimizations */
