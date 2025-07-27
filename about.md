@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "About Me"
+description: "About Marco Vieto Vega, data scientist passionate about turning complex data into actionable insights. Experience, education, and interests."
 ---
 
 <div class="about-page">

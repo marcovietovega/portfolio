@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Projects"
+description: "A showcase of data science and analytics projects by Marco Vieto Vega, demonstrating skills in machine learning, analytics, and visualization."
 ---
 
 <div class="projects-page">

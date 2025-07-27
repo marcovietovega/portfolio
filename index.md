@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Home"
+description: "Marco Vieto Vega - Data Scientist. Transforming data into insights and building solutions that drive impact."
 ---
 
 <section class="hero" style="background: url('{{ '/assets/img/hero.jpg' | relative_url }}') center/cover no-repeat;">

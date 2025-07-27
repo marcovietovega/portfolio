@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Blog"
+description: "Insights, tutorials, and thoughts on data science, machine learning, and analytics by Marco Vieto Vega."
 ---
 
 <div class="blog-page">
