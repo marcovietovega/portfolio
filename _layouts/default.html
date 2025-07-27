@@ -25,20 +25,7 @@
 
     {% include footer.html %}
 
-    <script>
-      // Make cards clickable
-      document.addEventListener("DOMContentLoaded", function () {
-        const clickableCards = document.querySelectorAll(".clickable-card");
-
-        clickableCards.forEach(function (card) {
-          card.addEventListener("click", function () {
-            const href = this.getAttribute("data-href");
-            if (href) {
-              window.open(href, "_blank");
-            }
-          });
-        });
-      });
-    </script>
+    <!-- JavaScript -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>

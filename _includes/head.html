@@ -1,0 +1,72 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="{{ page.description | default: site.description }}"
+  />
+  <meta name="author" content="{{ site.author.name }}" />
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta
+    http-equiv="Referrer-Policy"
+    content="strict-origin-when-cross-origin"
+  />
+
+  <!-- Preload Critical Resources -->
+  <link
+    rel="preload"
+    href="{{ '/assets/img/hero.jpg' | relative_url }}"
+    as="image"
+  />
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    as="style"
+  />
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="{{ '/assets/img/favicon.svg' | relative_url }}"
+  />
+  <link
+    rel="alternate icon"
+    href="{{ '/assets/img/favicon.svg' | relative_url }}"
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta
+    property="og:description"
+    content="{{ page.description | default: site.description }}"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+  <meta
+    name="twitter:description"
+    content="{{ page.description | default: site.description }}"
+  />
+
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
