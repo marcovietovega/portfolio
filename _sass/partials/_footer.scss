@@ -105,6 +105,19 @@
 .jekyll-icon {
   width: 32px;
   height: 32px;
-  margin-right: 0;
+  margin-right: 0.5rem;
   vertical-align: middle;
+  display: inline-block;
+}
+
+.jekyll-brand {
+  display: inline-flex;
+  align-items: center;
+  color: #cc0000;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.jekyll-brand:hover {
+  color: #e60000;
 }

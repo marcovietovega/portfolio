@@ -101,6 +101,10 @@ body.loaded .loading-screen {
 }
 
 /* Homepage Hero Animations */
+.hero {
+  animation: fadeInUp 0.8s ease-out;
+}
+
 .hero-content h1 {
   animation: fadeInUp 1s ease-out 0.2s both;
 }
