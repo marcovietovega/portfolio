@@ -66,7 +66,7 @@ featured_blog_posts:
     external:
     tags: ["Apache Airflow", "NLP", "HuggingFace"]
 
-  - title: "Building Senticheck: Collecting Data, Cleaning Text, and ..."
+  - title: "Building Senticheck: Collecting Data, Cleaning Text, and Seeing Progress"
     description: "In this post, I share how I pulled real posts from Bluesky, cleaned the text, stored everything in a database, and made progress on my portfolio site."
     image: "blog2.jpg"
     date: "24 Jul, 2025"

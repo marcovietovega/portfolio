@@ -88,18 +88,20 @@
 }
 
 .card-title {
-  text-align: left;
-  font-size: 1.35rem;
-  color: #fff;
-  font-weight: 800;
-  margin: 0.4rem 0;
-  line-height: 1.18;
-  word-break: break-word;
-  hyphens: auto;
-  overflow-wrap: break-word;
-  max-height: 3.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // Limit to 2 lines
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-height: 2.7em; // Adjust based on your line-height and font-size
+  line-height: 1.35em; // Should match your design
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0.4rem 0;
+  word-break: break-word;
+  hyphens: auto;
+  text-align: left;
 }
 
 .card-description {
