@@ -6,7 +6,7 @@ title: "Projects"
 <section class="page-header">
   <div class="container">
     <h1 class="page-title">My Projects</h1>
-    <p class="page-subtitle">A collection of data science and analytics projects showcasing my skills and expertise</p>
+    <p class="page-subtitle">A collection of data science and analytics projects showcasing my skills and expertise.</p>
   </div>
 </section>
 
@@ -23,14 +23,14 @@ title: "Projects"
           <p class="project-description">{{ project.description }}</p>
           <div class="project-tags">
             {% for tag in project.tags %}
-            <span class="tag">{{ tag }}</span>
+            <span class="tag" onclick="event.stopPropagation();">{{ tag }}</span>
             {% endfor %}
           </div>
           <div class="project-links">
             {% if project.link contains 'http' %}
-              <a href="{{ project.link }}" target="_blank" class="btn-project">View Live Demo</a>
+              <a href="{{ project.link }}" target="_blank" class="btn-project">Visit Site</a>
             {% else %}
-              <a href="{{ project.link }}" class="btn-project">Learn More</a>
+              <a href="{{ project.link }}" class="btn-project">View Project</a>
             {% endif %}
           </div>
         </div>
