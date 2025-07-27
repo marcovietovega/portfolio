@@ -88,3 +88,23 @@ description: "A showcase of data science and analytics projects by Marco Vieto V
 </section>
 
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Featured Projects",
+  "itemListElement": [
+    {% for project in site.featured_projects %}
+    {
+      "@type": "CreativeWork",
+      "position": {{ forloop.index }},
+      "name": "{{ project.title | escape }}",
+      "description": "{{ project.description | strip_newlines | escape }}",
+      "url": "{{ project.link | absolute_url }}"{% if project.image %},
+      "image": "{{ '/assets/img/' | append: project.image | relative_url | absolute_url }}"{% endif %}
+    }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

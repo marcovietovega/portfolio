@@ -59,6 +59,21 @@
       content="{{ page.og_image | default: site.og_image | relative_url | absolute_url }}"
     />
     {%- endif -%}
+
+    <!-- JSON-LD Structured Data for Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marco Vieto Vega",
+        "jobTitle": "Data Scientist",
+        "url": "{{ site.url | default: site.github.url | default: '/' | absolute_url }}",
+        "sameAs": [
+          "https://github.com/{{ site.author.social.github }}",
+          "https://linkedin.com/in/{{ site.author.social.linkedin }}"
+        ]
+      }
+    </script>
   </head>
   <body>
     {% include header.html %}
