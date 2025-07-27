@@ -9,6 +9,9 @@ theme: null
 sass:
   sass_dir: _sass
 
+plugins:
+  - jekyll-sitemap
+
 author:
   name: "Marco Vieto Vega"
   email: "mv03790@gmail.com"
