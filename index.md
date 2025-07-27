@@ -33,7 +33,7 @@ title: "Home"
       {% for project in site.featured_projects %}
       <div class="card clickable-card" data-href="{{ project.link }}">
         <div class="card-image">
-          <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="{{ project.title }}">
+          <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="Project image for {{ project.title }}" loading="lazy">
         </div>
         <div class="card-content">
           <h3 class="card-title">{{ project.title }}</h3>
@@ -63,7 +63,7 @@ title: "Home"
       {% for post in site.featured_blog_posts %}
       <div class="card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
         <div class="card-image">
-          <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="{{ post.title }}">
+          <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">
         </div>
         <div class="card-content">
           <div class="card-meta">

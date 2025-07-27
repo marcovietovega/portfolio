@@ -18,7 +18,7 @@ title: "Projects"
       {% for project in site.featured_projects %}
       <div class="project-card clickable-card" data-href="{{ project.link }}">
         <div class="project-image">
-          <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="{{ project.title }}">
+          <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="Project image for {{ project.title }}" loading="lazy">
         </div>
         <div class="project-content">
           <h2 class="project-title">{{ project.title }}</h2>

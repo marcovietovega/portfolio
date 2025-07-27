@@ -18,7 +18,7 @@ title: "Blog"
       {% for post in site.featured_blog_posts %}
       <div class="blog-card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
         <div class="blog-image">
-          <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="{{ post.title }}">
+          <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">
         </div>
         <div class="blog-content">
           <div class="blog-meta">
