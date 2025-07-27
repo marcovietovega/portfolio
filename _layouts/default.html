@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      {% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{
-      site.title }}{% endif %}
+      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </title>
     <meta
       name="description"
@@ -26,6 +25,8 @@
     />
 
     <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:title"
       content="{{ page.title | default: site.title }}"
@@ -34,17 +35,15 @@
       property="og:description"
       content="{{ page.description | default: site.description }}"
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    {%- if page.og_image or site.og_image -%}
     <meta
       property="og:image"
-      content="{{ page.og_image | default: site.og_image | relative_url | absolute_url }}"
+      content="{{ page.og_image | default: site.og_image | absolute_url }}"
     />
-    {%- endif -%}
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="marcovietovega.github.io" />
+    <meta property="twitter:url" content="{{ page.url | absolute_url }}" />
     <meta
       name="twitter:title"
       content="{{ page.title | default: site.title }}"
@@ -53,12 +52,10 @@
       name="twitter:description"
       content="{{ page.description | default: site.description }}"
     />
-    {%- if page.og_image or site.og_image -%}
     <meta
       name="twitter:image"
-      content="{{ page.og_image | default: site.og_image | relative_url | absolute_url }}"
+      content="{{ page.og_image | default: site.og_image | absolute_url }}"
     />
-    {%- endif -%}
 
     <!-- JSON-LD Structured Data for Person -->
     <script type="application/ld+json">
