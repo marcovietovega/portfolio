@@ -1,10 +1,5 @@
 /* Animations and Performance Optimizations */
 
-/* Loading States */
-body:not(.loaded) {
-  overflow: hidden;
-}
-
 .loading-screen {
   position: fixed;
   top: 0;
