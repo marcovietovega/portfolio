@@ -1,28 +1,21 @@
 ---
 ---
 
+@use "partials/base";
+@use "partials/header";
+@use "partials/hero";
+@use "partials/cards";
+@use "partials/buttons";
+@use "partials/footer";
+@use "partials/animations";
+@use "partials/back-to-top";
+@use "partials/loading";
+@use "partials/page-transitions";
+@use "partials/projects";
+@use "partials/blog";
+@use "partials/about";
+@use "partials/responsive";
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 // Background images will be handled in HTML
-
-// Base styles
-@import "partials/base";
-
-// Components
-@import "partials/header";
-@import "partials/hero";
-@import "partials/cards";
-@import "partials/buttons";
-@import "partials/footer";
-@import "partials/animations";
-@import "partials/back-to-top";
-@import "partials/loading";
-@import "partials/page-transitions";
-
-// Pages
-@import "partials/projects";
-@import "partials/blog";
-@import "partials/about";
-
-// Responsive
-@import "partials/responsive";
