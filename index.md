@@ -75,20 +75,30 @@ og_image: /assets/img/og-image.png
     
     <div class="cards-grid">
       {% for post in site.featured_blog_posts %}
-      <div class="card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
+      <div class="card">
         <div class="card-image">
           <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">
+          <div class="card-tags card-tags-overlay">
+            {% for tag in post.tags %}
+            <span class="tag tag-small">{{ tag }}</span>
+            {% endfor %}
+          </div>
         </div>
         <div class="card-content">
           <div class="card-meta">
             <span class="card-date">{{ post.date }}</span>
           </div>
           <h3 class="card-title">{{ post.title }}</h3>
-          <p class="card-description">{{ post.description }}</p>
-          <div class="card-tags">
-            {% for tag in post.tags %}
-            <span class="tag" onclick="event.stopPropagation();">{{ tag }}</span>
-            {% endfor %}
+          <div class="project-links">
+            {% if post.external %}
+              <a href="{{ post.link }}" target="_blank" class="btn-project btn-primary">
+                <i class="fas fa-external-link-alt"></i> Read Article
+              </a>
+            {% else %}
+              <a href="{{ post.link }}" class="btn-project btn-secondary">
+                <i class="fas fa-book-open"></i> Read More
+              </a>
+            {% endif %}
           </div>
         </div>
       </div>

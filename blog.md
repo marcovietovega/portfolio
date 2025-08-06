@@ -17,9 +17,14 @@ description: "Insights, tutorials, and thoughts on data science, machine learnin
   <div class="container">
     <div class="blog-grid">
       {% for post in site.featured_blog_posts %}
-      <div class="blog-card clickable-card" data-href="{{ post.link }}"{% if post.external %} target="_blank"{% endif %}>
+      <div class="blog-card">
         <div class="blog-image">
           <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">
+          <div class="blog-tags blog-tags-overlay">
+            {% for tag in post.tags %}
+            <span class="tag tag-small">{{ tag }}</span>
+            {% endfor %}
+          </div>
         </div>
         <div class="blog-content">
           <div class="blog-meta">
@@ -27,16 +32,15 @@ description: "Insights, tutorials, and thoughts on data science, machine learnin
           </div>
           <h2 class="blog-title">{{ post.title }}</h2>
           <p class="blog-description">{{ post.description }}</p>
-          <div class="blog-tags">
-            {% for tag in post.tags %}
-            <span class="tag" onclick="event.stopPropagation();">{{ tag }}</span>
-            {% endfor %}
-          </div>
           <div class="blog-links">
-            {% if post.link contains 'http' %}
-              <a href="{{ post.link }}" target="_blank" class="btn-blog">Read Article</a>
+            {% if post.external %}
+              <a href="{{ post.link }}" target="_blank" class="btn-project btn-primary">
+                <i class="fas fa-external-link-alt"></i> Read Article
+              </a>
             {% else %}
-              <a href="{{ post.link }}" class="btn-blog">Read More</a>
+              <a href="{{ post.link }}" class="btn-project btn-secondary">
+                <i class="fas fa-book-open"></i> Read More
+              </a>
             {% endif %}
           </div>
         </div>
