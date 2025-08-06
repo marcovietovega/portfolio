@@ -44,11 +44,11 @@ featured_projects:
     tags: ["Python", "Plotly", "Pandas"]
     github: "https://github.com/marcovietovega/dashboard-project"
 
-  - title: "Machine Learning Model"
-    description: "Predictive model for customer behavior analysis using scikit-learn and advanced statistical methods."
-    image: "project2.jpg"
-    tags: ["Machine Learning", "Scikit-learn", "Statistics"]
-    github: "https://github.com/marcovietovega/ml-model"
+  - title: "Fruit Images Classification with Deep Learning"
+    description: "Image classification model for cherries, strawberries, and tomatoes classification using PyTorch and transfer learning techniques."
+    image: "project2.png"
+    tags: ["PyTorch", "Computer Vision", "Transfer Learning"]
+    github: "https://github.com/marcovietovega/Fruit-Classification"
 
   - title: "Crash Insights NZ"
     description: "An interactive dashboard built with R Shiny, analysing vehicle crash data in New Zealand with dynamic filters and comprehensive visualisations."
