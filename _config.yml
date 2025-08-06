@@ -42,19 +42,20 @@ featured_projects:
     description: "Interactive dashboard built with Python and Plotly for real-time data visualization and analytics."
     image: "project1.jpg"
     tags: ["Python", "Plotly", "Pandas"]
-    link: "/projects/dashboard"
+    github: "https://github.com/marcovietovega/dashboard-project"
 
   - title: "Machine Learning Model"
     description: "Predictive model for customer behavior analysis using scikit-learn and advanced statistical methods."
     image: "project2.jpg"
     tags: ["Machine Learning", "Scikit-learn", "Statistics"]
-    link: "/projects/ml-model"
+    github: "https://github.com/marcovietovega/ml-model"
 
   - title: "Crash Insights NZ"
     description: "An interactive dashboard built with R Shiny, analysing vehicle crash data in New Zealand with dynamic filters and comprehensive visualisations."
     image: "project3.jpg"
     tags: ["R", "Shiny", "Data Visualization"]
-    link: "https://marcovietovega.shinyapps.io/crashinsightsnz/"
+    github: "https://github.com/marcovietovega/crashinsightsnz"
+    demo: "https://marcovietovega.shinyapps.io/crashinsightsnz/"
 
 featured_blog_posts:
   - title: "Getting Started with Python for Data Analysis"

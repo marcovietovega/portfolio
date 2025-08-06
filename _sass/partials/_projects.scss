@@ -94,7 +94,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -138,6 +138,20 @@
   gap: 0.7rem;
   margin-top: 1.2rem;
   justify-content: center;
+}
+
+/* Override for project tags overlay */
+.project-tags-overlay {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  z-index: 3;
+  max-width: 60%;
+  margin-top: 0;
 }
 
 .project-links {

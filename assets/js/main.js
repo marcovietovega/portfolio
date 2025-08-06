@@ -32,19 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   images.forEach((img) => imageObserver.observe(img));
 
-  // Clickable cards functionality
+  // Clickable cards functionality (only for blog cards now)
   const clickableCards = document.querySelectorAll(".clickable-card");
   clickableCards.forEach((card) => {
-    card.addEventListener("click", function () {
-      const href = this.dataset.href;
-      if (href) {
-        if (href.startsWith("http")) {
-          window.open(href, "_blank");
-        } else {
-          window.location.href = href;
+    // Only make blog cards clickable, not project cards
+    if (
+      !card.closest(".featured-section:first-of-type") &&
+      !card.closest(".projects-section")
+    ) {
+      card.addEventListener("click", function () {
+        const href = this.dataset.href;
+        if (href) {
+          if (href.startsWith("http")) {
+            window.open(href, "_blank");
+          } else {
+            window.location.href = href;
+          }
         }
-      }
-    });
+      });
+    }
   });
 
   // Add loading animation

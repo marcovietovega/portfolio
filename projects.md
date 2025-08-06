@@ -17,23 +17,28 @@ description: "A showcase of data science and analytics projects by Marco Vieto V
   <div class="container">
     <div class="projects-grid">
       {% for project in site.featured_projects %}
-      <div class="project-card clickable-card" data-href="{{ project.link }}">
+      <div class="project-card">
         <div class="project-image">
           <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="Project image for {{ project.title }}" loading="lazy">
+          <div class="project-tags project-tags-overlay">
+            {% for tag in project.tags %}
+            <span class="tag tag-small">{{ tag }}</span>
+            {% endfor %}
+          </div>
         </div>
         <div class="project-content">
           <h2 class="project-title">{{ project.title }}</h2>
           <p class="project-description">{{ project.description }}</p>
-          <div class="project-tags">
-            {% for tag in project.tags %}
-            <span class="tag" onclick="event.stopPropagation();">{{ tag }}</span>
-            {% endfor %}
-          </div>
           <div class="project-links">
-            {% if project.link contains 'http' %}
-              <a href="{{ project.link }}" target="_blank" class="btn-project">Visit Site</a>
-            {% else %}
-              <a href="{{ project.link }}" class="btn-project">View Project</a>
+            {% if project.demo %}
+              <a href="{{ project.demo }}" target="_blank" class="btn-project btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            {% endif %}
+            {% if project.github %}
+              <a href="{{ project.github }}" target="_blank" class="btn-project btn-secondary">
+                <i class="fab fa-github"></i> View Code
+              </a>
             {% endif %}
           </div>
         </div>

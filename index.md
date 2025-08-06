@@ -33,17 +33,29 @@ og_image: /assets/img/og-image.png
     
     <div class="cards-grid">
       {% for project in site.featured_projects %}
-      <div class="card clickable-card" data-href="{{ project.link }}">
+      <div class="card">
         <div class="card-image">
           <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="Project image for {{ project.title }}" loading="lazy">
+          <div class="card-tags card-tags-overlay">
+            {% for tag in project.tags %}
+            <span class="tag tag-small">{{ tag }}</span>
+            {% endfor %}
+          </div>
         </div>
         <div class="card-content">
           <h3 class="card-title">{{ project.title }}</h3>
           <p class="card-description">{{ project.description }}</p>
-          <div class="card-tags">
-            {% for tag in project.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
+          <div class="project-links">
+            {% if project.demo %}
+              <a href="{{ project.demo }}" target="_blank" class="btn-project btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            {% endif %}
+            {% if project.github %}
+              <a href="{{ project.github }}" target="_blank" class="btn-project btn-secondary">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            {% endif %}
           </div>
         </div>
       </div>
