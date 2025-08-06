@@ -160,6 +160,92 @@
   margin: 0;
 }
 
+/* Academic Performance Section */
+.academic-performance-section {
+  padding: 2rem 0;
+  background: transparent;
+}
+
+.academic-performance-section .section-subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.academic-years {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.academic-year {
+  background: rgba(24, 29, 34, 0.85);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  color: #fff;
+  border: none;
+}
+
+.academic-year h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #007acc;
+  text-align: center;
+}
+
+.grades-table {
+  overflow-x: auto;
+}
+
+.grades-table-content {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.grades-table-content th {
+  background: rgba(0, 122, 204, 0.1);
+  color: #007acc;
+  font-weight: 600;
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid rgba(0, 122, 204, 0.3);
+}
+
+.grades-table-content td {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.grades-table-content tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.grades-table-content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Grade color coding */
+.grade-a-plus {
+  color: #4caf50 !important;
+  font-weight: 600;
+}
+
+.grade-a {
+  color: #8bc34a !important;
+  font-weight: 600;
+}
+
+.grade-a-minus {
+  color: #cddc39 !important;
+  font-weight: 600;
+}
+
 /* Interests Section */
 .interests-section {
   padding: 0 0rem 4rem 0rem;
@@ -231,5 +317,20 @@
 
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .academic-years {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grades-table-content th,
+  .grades-table-content td {
+    padding: 0.5rem 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .academic-year {
+    padding: 1.5rem;
   }
 }

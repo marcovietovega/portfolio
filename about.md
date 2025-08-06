@@ -88,6 +88,109 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
   </div>
 </section>
 
+<section class="academic-performance-section">
+  <div class="container">
+    <h2 class="section-title">Academic Performance</h2>
+    <p class="section-subtitle">Master of Data Science Course Grades</p>
+    
+    <div class="academic-years">
+      <div class="academic-year">
+        <h3>2024 Courses</h3>
+        <div class="grades-table">
+          <table class="grades-table-content">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Title</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AIML420</td>
+                <td>Artificial Intelligence</td>
+                <td class="grade-a">A</td>
+              </tr>
+              <tr>
+                <td>AIML421</td>
+                <td>Machine Learning Tools and Techniques</td>
+                <td class="grade-a-plus">A+</td>
+              </tr>
+              <tr>
+                <td>AIML425</td>
+                <td>Neural Networks and Deep Learning</td>
+                <td class="grade-a-minus">A-</td>
+              </tr>
+              <tr>
+                <td>DATA471</td>
+                <td>Practical Data Science</td>
+                <td class="grade-a-plus">A+</td>
+              </tr>
+              <tr>
+                <td>DATA472</td>
+                <td>Data Management & Programming</td>
+                <td class="grade-a-plus">A+</td>
+              </tr>
+              <tr>
+                <td>STAT292</td>
+                <td>Applied Statistics</td>
+                <td class="grade-a">A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="academic-year">
+        <h3>2025 Courses</h3>
+        <div class="grades-table">
+          <table class="grades-table-content">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Title</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AIML427</td>
+                <td>Big Data</td>
+                <td class="grade-a">A</td>
+              </tr>
+              <tr>
+                <td>DATA473</td>
+                <td>Statistical Modelling for Data Science</td>
+                <td class="grade-a-plus">A+</td>
+              </tr>
+              <tr>
+                <td>DATA491</td>
+                <td>Mathematics for Data Science</td>
+                <td class="grade-a">A</td>
+              </tr>
+              <tr>
+                <td>DATA501</td>
+                <td>Advanced Techniques in Data Science</td>
+                <td class="grade-a"></td>
+              </tr>
+              <tr>
+                <td>STAT432</td>
+                <td>Computational Statistics</td>
+                <td class="grade-a"></td>
+              </tr>
+              <tr>
+                <td>STAT438</td>
+                <td>Generalised Linear Models</td>
+                <td class="grade-a"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="interests-section">
   <div class="container">
     <h2 class="section-title">Interests & Hobbies</h2>
