@@ -67,7 +67,7 @@ description: "A showcase of data science and machine learning projects by Marco 
           <span class="skill-tag">Scikit-learn</span>
           <span class="skill-tag">PyTorch</span>
           <span class="skill-tag">Transformers</span>
-          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">PySpark</span>
         </div>
       </div>
       <div class="skill-category">
