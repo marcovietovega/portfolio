@@ -73,7 +73,7 @@ featured_blog_posts:
     date: "24 Jul, 2025"
     link: "https://marcovietovega.substack.com/p/building-senticheck-collecting-data"
     external: true
-    tags: ["NLP", "PostgresSQL", "Python", "Jekyll"]
+    tags: ["NLP", "PostgresSQL", "Python"]
 
   - title: "Starting My Data Science Portfolio (And Writing About It)"
     description: "In my first post, I introduced the project I'm building for my data science portfolio and explained the architecture and tools I'm using."
