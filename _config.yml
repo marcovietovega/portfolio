@@ -38,21 +38,21 @@ sections:
     cta_link: "/blog"
 
 featured_projects:
-  - title: "Data Analysis Dashboard"
+  - title: "Parkinson's Disease Detection with Hand-Drawn Spirals"
     description: "Interactive dashboard built with Python and Plotly for real-time data visualization and analytics."
-    image: "project1.jpg"
-    tags: ["Python", "Plotly", "Pandas"]
-    github: "https://github.com/marcovietovega/dashboard-project"
+    image: "project3.jpg"
+    tags: ["Python", "PyTorch", "CNN", "Feature Engineering"]
+    github: "https://github.com/marcovietovega/parkinsons-spiral-detection"
 
   - title: "Fruit Images Classification with Deep Learning"
     description: "Image classification model for cherries, strawberries, and tomatoes classification using PyTorch and transfer learning techniques."
     image: "project2.png"
-    tags: ["PyTorch", "Computer Vision", "Transfer Learning"]
+    tags: ["Python", "Transfer Learning", "Computer Vision", "PyTorch"]
     github: "https://github.com/marcovietovega/Fruit-Classification"
 
   - title: "Crash Insights NZ"
     description: "An interactive dashboard built with R Shiny, analysing vehicle crash data in New Zealand with dynamic filters and comprehensive visualisations."
-    image: "project3.jpg"
+    image: "project1.jpg"
     tags: ["R", "Shiny", "Data Visualization"]
     github: "https://github.com/marcovietovega/crashinsightsnz"
     demo: "https://marcovietovega.shinyapps.io/crashinsightsnz/"
