@@ -2,14 +2,9 @@
 
 This is the personal portfolio website of Marco Vieto Vega, Data Scientist. The site showcases projects, blog posts, and professional experience, and is built with Jekyll and modern web best practices.
 
-## Features
+Access the portfolio website here: [Marco Vieto Vega Portfolio](https://marcovietovega.github.io/portfolio/).
 
-- Responsive, modern design
-- SEO and social sharing optimized
-- Accessible navigation and content
-- Projects and blog posts with previews
-- Lazy loading and performance optimizations
-- Easy to update content via Markdown and YAML
+**Note:** This portfolio is a work in progress.
 
 ## License
 
