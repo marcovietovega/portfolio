@@ -89,11 +89,11 @@
 
 .card-title {
   display: -webkit-box;
-  -webkit-line-clamp: 2; // Limit to 2 lines
+  -webkit-line-clamp: 3; // Limit to 3 lines
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 2.7em; // Adjust based on your line-height and font-size
+  max-height: 4.05em; // Adjusted for 3 lines
   line-height: 1.35em; // Should match your design
   font-size: 1.35rem;
   font-weight: 800;
@@ -113,7 +113,7 @@
   word-break: break-word;
   hyphens: auto;
   overflow-wrap: break-word;
-  max-height: 5em;
+  max-height: 7em;
   overflow: hidden;
   text-overflow: ellipsis;
 }
