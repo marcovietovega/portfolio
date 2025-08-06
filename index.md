@@ -32,7 +32,8 @@ og_image: /assets/img/og-image.png
     <p class="section-subtitle">{{ site.sections.projects.subtitle }}</p>
     
     <div class="cards-grid">
-      {% for project in site.featured_projects %}
+      {% assign featured_projects = site.projects | where: "featured", true %}
+      {% for project in featured_projects %}
       <div class="card">
         <div class="card-image">
           <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="Project image for {{ project.title }}" loading="lazy">
@@ -74,7 +75,8 @@ og_image: /assets/img/og-image.png
     <p class="section-subtitle">{{ site.sections.blog.subtitle }}</p>
     
     <div class="cards-grid">
-      {% for post in site.featured_blog_posts %}
+      {% assign featured_blog_posts = site.blog_posts | where: "featured", true %}
+      {% for post in featured_blog_posts %}
       <div class="card">
         <div class="card-image">
           <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">

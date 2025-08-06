@@ -16,7 +16,7 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
 <section class="blog-section">
   <div class="container">
     <div class="blog-grid">
-      {% for post in site.featured_blog_posts %}
+      {% for post in site.blog_posts %}
       <div class="blog-card">
         <div class="blog-image">
           <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">

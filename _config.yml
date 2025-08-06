@@ -37,18 +37,20 @@ sections:
     cta_text: "View All Posts"
     cta_link: "/blog"
 
-featured_projects:
+projects:
   - title: "Parkinson's Disease Detection with Hand-Drawn Spirals"
     description: "Interactive dashboard built with Python and Plotly for real-time data visualization and analytics."
     image: "project3.jpg"
     tags: ["Python", "PyTorch", "CNN", "Feature Engineering"]
     github: "https://github.com/marcovietovega/parkinsons-spiral-detection"
+    featured: true
 
   - title: "Fruit Images Classification with Deep Learning"
     description: "Image classification model for cherries, strawberries, and tomatoes classification using PyTorch and transfer learning techniques."
     image: "project2.png"
     tags: ["Python", "Transfer Learning", "Computer Vision", "PyTorch"]
     github: "https://github.com/marcovietovega/Fruit-Classification"
+    featured: true
 
   - title: "Crash Insights NZ"
     description: "An interactive dashboard built with R Shiny, analysing vehicle crash data in New Zealand with dynamic filters and comprehensive visualisations."
@@ -56,8 +58,9 @@ featured_projects:
     tags: ["R", "Shiny", "Data Visualization"]
     github: "https://github.com/marcovietovega/crashinsightsnz"
     demo: "https://marcovietovega.shinyapps.io/crashinsightsnz/"
+    featured: true
 
-featured_blog_posts:
+blog_posts:
   - title: "Getting Started with Python for Data Analysis"
     description: "A comprehensive guide to using Python libraries like Pandas and NumPy for effective data analysis workflows."
     image: "blog1.jpg"
@@ -66,6 +69,7 @@ featured_blog_posts:
     link: "/blog/python-data-analysis"
     external:
     tags: ["Apache Airflow", "NLP", "HuggingFace"]
+    featured: true
 
   - title: "Building Senticheck: Collecting Data, Cleaning Text, and Seeing Progress"
     description: "In this post, I share how I pulled real posts from Bluesky, cleaned the text, stored everything in a database, and made progress on my portfolio site."
@@ -74,6 +78,7 @@ featured_blog_posts:
     link: "https://marcovietovega.substack.com/p/building-senticheck-collecting-data"
     external: true
     tags: ["NLP", "PostgresSQL", "Python"]
+    featured: true
 
   - title: "Starting My Data Science Portfolio (And Writing About It)"
     description: "In my first post, I introduced the project I'm building for my data science portfolio and explained the architecture and tools I'm using."
@@ -82,3 +87,4 @@ featured_blog_posts:
     link: "https://marcovietovega.substack.com/p/starting-my-data-science-portfolio"
     external: true
     tags: ["Portfolio", "NLP", "Python"]
+    featured: true

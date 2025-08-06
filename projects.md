@@ -16,7 +16,7 @@ description: "A showcase of data science and machine learning projects by Marco 
 <section class="projects-section">
   <div class="container">
     <div class="projects-grid">
-      {% for project in site.featured_projects %}
+      {% for project in site.projects %}
       <div class="project-card">
         <div class="project-image">
           <img src="{{ '/assets/img/' | append: project.image | relative_url }}" alt="Project image for {{ project.title }}" loading="lazy">
@@ -100,7 +100,7 @@ description: "A showcase of data science and machine learning projects by Marco 
   "@type": "ItemList",
   "name": "Featured Projects",
   "itemListElement": [
-    {% for project in site.featured_projects %}
+    {% for project in site.projects %}
     {
       "@type": "CreativeWork",
       "position": {{ forloop.index }},
