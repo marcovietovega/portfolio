@@ -54,7 +54,7 @@ featured_projects:
     description: "An interactive dashboard built with R Shiny, analysing vehicle crash data in New Zealand with dynamic filters and comprehensive visualisations."
     image: "project3.jpg"
     tags: ["R", "Shiny", "Data Visualization"]
-    link: "https://mv03790.shinyapps.io/crashinsightsnz/"
+    link: "https://marcovietovega.shinyapps.io/crashinsightsnz/"
 
 featured_blog_posts:
   - title: "Getting Started with Python for Data Analysis"
