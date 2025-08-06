@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Projects"
-description: "A showcase of data science and analytics projects by Marco Vieto Vega, demonstrating skills in machine learning, analytics, and visualization."
+description: "A showcase of data science and machine learning projects by Marco Vieto Vega, demonstrating skills in machine learning, analytics, and visualization."
 ---
 
 <div class="projects-page">
@@ -9,7 +9,7 @@ description: "A showcase of data science and analytics projects by Marco Vieto V
 <section class="page-header" style="background: url('{{ '/assets/img/projects-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">My Projects</h1>
-    <p class="page-subtitle">A collection of data science and analytics projects showcasing my skills and expertise.</p>
+    <p class="page-subtitle">A collection of data science and machine learning projects showcasing my skills and expertise.</p>
   </div>
 </section>
 
@@ -64,10 +64,10 @@ description: "A showcase of data science and analytics projects by Marco Vieto V
       <div class="skill-category">
         <h3>Data Science & ML</h3>
         <div class="skills-list">
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
           <span class="skill-tag">Scikit-learn</span>
-          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">XGBoost</span>
         </div>
       </div>
       <div class="skill-category">
@@ -76,7 +76,7 @@ description: "A showcase of data science and analytics projects by Marco Vieto V
           <span class="skill-tag">Plotly</span>
           <span class="skill-tag">Matplotlib</span>
           <span class="skill-tag">Shiny</span>
-          <span class="skill-tag">D3.js</span>
+          <span class="skill-tag">Streamlit</span>
         </div>
       </div>
       <div class="skill-category">
@@ -84,8 +84,8 @@ description: "A showcase of data science and analytics projects by Marco Vieto V
         <div class="skills-list">
           <span class="skill-tag">Git</span>
           <span class="skill-tag">Docker</span>
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">Airflow</span>
         </div>
       </div>
     </div>
