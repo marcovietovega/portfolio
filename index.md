@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Marco Vieto Vega – Data Scientist"
-description: "Marco Vieto Vega - Data Scientist. Transforming data into insights and building solutions that drive impact."
+description: "Marco Vieto Vega - Data Scientist. Transforming data into insights and building solutions that make a difference."
 og_image: /assets/img/og-image.png
 ---
 
