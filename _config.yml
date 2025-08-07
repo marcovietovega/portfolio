@@ -38,12 +38,19 @@ sections:
     cta_link: "/blog"
 
 projects:
+  - title: "US Crime Rate Prediction"
+    description: "Predicting crime rates in the US using GAMs and statistical modelling techniques."
+    image: "project4.jpg"
+    tags: ["R", "GAMs", "Feature Engineering"]
+    github: "https://github.com/marcovietovega/US-Crime-Rate-Prediction"
+    featured: true
+
   - title: "Parkinson's Disease Detection with Hand-Drawn Spirals"
     description: "Interactive dashboard built with Python and Plotly for real-time data visualization and analytics."
     image: "project3.jpg"
     tags: ["Python", "PyTorch", "CNN", "Feature Engineering"]
     github: "https://github.com/marcovietovega/parkinsons-spiral-detection"
-    featured: true
+    featured: false
 
   - title: "Fruit Images Classification with Deep Learning"
     description: "Image classification model for cherries, strawberries, and tomatoes classification using PyTorch and transfer learning techniques."
