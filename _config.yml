@@ -38,12 +38,18 @@ sections:
     cta_link: "/blog"
 
 projects:
+  - title: "Senticheck: Bluesky Data Collection and Analysis [WIP]"
+    description: "Bluesky data collection and sentiment analysis project using Python, Airflow, and NLP techniques. Currently in progress."
+    image: "project6.jpg"
+    tags: ["Python", "NLP", "Transformers", "Airflow"]
+    github: "https://github.com/marcovietovega/Senticheck"
+    featured: true
+
   - title: "US Crime Rate Prediction"
     description: "Predicting crime rates in the US using GAMs and statistical modelling techniques."
     image: "project4.jpg"
     tags: ["R", "GAMs", "Feature Engineering"]
     github: "https://github.com/marcovietovega/US-Crime-Rate-Prediction"
-    featured: true
 
   - title: "Parkinson's Disease Detection with Hand-Drawn Spirals"
     description: "Interactive dashboard built with Python and Plotly for real-time data visualization and analytics."
