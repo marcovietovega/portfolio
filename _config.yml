@@ -39,10 +39,17 @@ sections:
 
 projects:
   - title: "Senticheck: Bluesky Data Collection and Analysis [WIP]"
-    description: "Bluesky data collection and sentiment analysis project using Python, Airflow, and NLP techniques. Currently in progress."
+    description: "Bluesky data collection and sentiment analysis project using Python, Airflow, and NLP. Currently in progress."
     image: "project6.jpg"
     tags: ["Python", "NLP", "Transformers", "Airflow"]
     github: "https://github.com/marcovietovega/Senticheck"
+    featured: true
+
+  - title: "Forest Cover Type Classification"
+    description: "Predicting forest cover types using cartographic variables and machine learning with Apache Spark (PySpark)."
+    image: "project5.jpg"
+    tags: ["PySpark", "Random Forest", "Feature Engineering"]
+    github: "https://github.com/marcovietovega/Forest-Cover-Type-Classification"
     featured: true
 
   - title: "US Crime Rate Prediction"
@@ -56,14 +63,12 @@ projects:
     image: "project3.jpg"
     tags: ["Python", "PyTorch", "CNN", "Feature Engineering"]
     github: "https://github.com/marcovietovega/parkinsons-spiral-detection"
-    featured: false
 
   - title: "Fruit Images Classification with Deep Learning"
     description: "Image classification model for cherries, strawberries, and tomatoes classification using PyTorch and transfer learning techniques."
     image: "project2.png"
     tags: ["Python", "Transfer Learning", "Computer Vision", "PyTorch"]
     github: "https://github.com/marcovietovega/Fruit-Classification"
-    featured: true
 
   - title: "Crash Insights NZ"
     description: "An interactive dashboard built with R Shiny, analysing vehicle crash data in New Zealand with dynamic filters and comprehensive visualisations."
