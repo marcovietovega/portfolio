@@ -208,7 +208,7 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
         <h3>Personal Hobbies</h3>
         <div class="interests-list">
           <span class="interest-tag">Reading</span>
-          <span class="interest-tag">Weightlifting</span>
+          <span class="interest-tag">Gym</span>
           <span class="interest-tag">Football (Soccer)</span>
           <span class="interest-tag">Traveling</span>
         </div>
