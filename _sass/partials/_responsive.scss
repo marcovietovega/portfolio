@@ -5,6 +5,11 @@
     gap: 1.5rem;
   }
 
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .section-title {
     font-size: 2rem;
   }

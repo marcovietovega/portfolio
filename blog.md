@@ -15,7 +15,7 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
 
 <section class="blog-section">
   <div class="container">
-    <div class="cards-grid">
+    <div class="projects-grid">
       {% for post in site.blog_posts %}
       <div class="card">
         <div class="card-image">
