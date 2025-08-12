@@ -91,6 +91,7 @@ og_image: /assets/img/og-image.png
             <span class="card-date">{{ post.date }}</span>
           </div>
           <h3 class="card-title">{{ post.title }}</h3>
+          <p class="card-description">{{ post.description }}</p>
           <div class="project-links">
             {% if post.external %}
               <a href="{{ post.link }}" target="_blank" class="btn-project btn-primary">

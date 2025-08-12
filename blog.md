@@ -15,24 +15,24 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
 
 <section class="blog-section">
   <div class="container">
-    <div class="blog-grid">
+    <div class="cards-grid">
       {% for post in site.blog_posts %}
-      <div class="blog-card">
-        <div class="blog-image">
+      <div class="card">
+        <div class="card-image">
           <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="Blog post image for {{ post.title }}" loading="lazy">
-          <div class="blog-tags blog-tags-overlay">
+          <div class="card-tags card-tags-overlay">
             {% for tag in post.tags %}
             <span class="tag tag-small">{{ tag }}</span>
             {% endfor %}
           </div>
         </div>
-        <div class="blog-content">
-          <div class="blog-meta">
-            <span class="blog-date">{{ post.date }}</span>
+        <div class="card-content">
+          <div class="card-meta">
+            <span class="card-date">{{ post.date }}</span>
           </div>
-          <h2 class="blog-title">{{ post.title }}</h2>
-          <p class="blog-description">{{ post.description }}</p>
-          <div class="blog-links">
+          <h3 class="card-title">{{ post.title }}</h3>
+          <p class="card-description">{{ post.description }}</p>
+          <div class="project-links">
             {% if post.external %}
               <a href="{{ post.link }}" target="_blank" class="btn-project btn-primary">
                 <i class="fas fa-external-link-alt"></i> Read Article
