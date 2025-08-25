@@ -18,7 +18,7 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
     <div class="about-content">
       <div class="about-text">
         <h2 class="section-title">My Story</h2>
-        <p>I'm a data science master’s student with a strong interest in working with data and building practical solutions. I enjoy working on projects that involve exploring data, building models, and creating visualizations that clearly explain what I find.</p>
+        <p>I am a data science master’s student with a background in software development and several years of experience in corporate environments. I enjoy exploring data, building models, and creating visualisations that explain insights clearly. My professional experience taught me how to design scalable solutions, collaborate with teams, and deliver tools that support real decision-making. Now my goal is to apply those skills to data science, focusing on statistics, machine learning, and visualisation to build solutions that are practical and valuable.</p>
         <p>I became interested in data science because I was curious about how data was being used in different areas, from business to health, to solve real problems and improve decision-making. That curiosity grew into a deeper interest in how data can be used to build tools and applications that make a difference in people’s lives.</p>
         <p>During my studies, I’ve worked on projects involving statistics, machine learning, and visualization. I focus on how these techniques can be applied to create solutions that are useful, easy to understand, and relevant to real-world needs.</p>
         <p>I'm always looking for opportunities to learn more, grow my skills, and build things that are both meaningful and valuable.</p>
