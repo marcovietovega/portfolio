@@ -79,6 +79,15 @@ projects:
     featured: true
 
 blog_posts:
+  - title: "Freezing in Airflow, Flowing with FastAPI"
+    description: "A personal reflection on debugging, redesign, and progress. This post shares how a stubborn Airflow issue led to a cleaner architecture using FastAPI, a working sentiment dashboard, and a refreshed portfolio site."
+    image: "blog4.png"
+    date: "25 Aug, 2025"
+    link: "https://marcovietovega.substack.com/p/freezing-in-airflow-flowing-with"
+    external: true
+    tags: ["Apache Airflow", "FastAPI", "Portfolio"]
+    featured: true
+
   - title: "Bronze, Silver, Gold: Organising SentiCheck’s Data"
     description: "A look into Medallion Architecture and how SentiCheck applies the Bronze, Silver, and soon Gold layers to organise data, automate Apache Airflow workflows, and prepare it for NLP analysis."
     image: "blog3.jpg"
@@ -104,4 +113,4 @@ blog_posts:
     link: "https://marcovietovega.substack.com/p/starting-my-data-science-portfolio"
     external: true
     tags: ["Portfolio", "NLP", "Python"]
-    featured: true
+    featured: false
