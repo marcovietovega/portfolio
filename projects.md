@@ -59,6 +59,7 @@ description: "A showcase of data science and machine learning projects by Marco 
           <span class="skill-tag">R</span>
           <span class="skill-tag">SQL</span>
           <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C++</span>
         </div>
       </div>
       <div class="skill-category">
