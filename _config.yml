@@ -50,6 +50,7 @@ projects:
     image: "project6.jpg"
     tags: ["Python", "NLP", "Transformers", "Airflow"]
     github: "https://github.com/marcovietovega/Senticheck"
+    demo: "https://senticheck.dev/"
     featured: true
 
   - title: "Forest Cover Type Classification"
