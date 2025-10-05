@@ -88,7 +88,7 @@ projects:
 blog_posts:
   - title: "An End to End Journey: Building, Breaking, and Deploying SentiCheck"
     description: "An end to the journey of building SentiCheck, now fully deployed on Azure with Functions, Container Apps, PostgreSQL, and CI/CD automation."
-    image: "blog5.png"
+    image: "blog5.jpg"
     date: "6 Oct, 2025"
     link: "https://marcovietovega.substack.com/p/an-end-to-end-journey-building-breaking"
     external: true
