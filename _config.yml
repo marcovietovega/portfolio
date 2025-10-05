@@ -86,6 +86,15 @@ projects:
     featured: true
 
 blog_posts:
+  - title: "An End to End Journey: Building, Breaking, and Deploying SentiCheck"
+    description: "An end to the journey of building SentiCheck, now fully deployed on Azure with Functions, Container Apps, PostgreSQL, and CI/CD automation."
+    image: "blog5.png"
+    date: "6 Oct, 2025"
+    link: "https://marcovietovega.substack.com/p/an-end-to-end-journey-building-breaking"
+    external: true
+    tags: ["Azure", "SentiCheck", "CloudDeployment"]
+    featured: true
+
   - title: "Freezing in Airflow, Flowing with FastAPI"
     description: "A personal reflection on debugging, redesign, and progress. This post shares how a stubborn Airflow issue led to a cleaner architecture using FastAPI, a working sentiment dashboard, and a refreshed portfolio site."
     image: "blog4.png"
@@ -111,7 +120,7 @@ blog_posts:
     link: "https://marcovietovega.substack.com/p/building-senticheck-collecting-data"
     external: true
     tags: ["NLP", "PostgresSQL", "Python"]
-    featured: true
+    featured: false
 
   - title: "Starting My Data Science Portfolio (And Writing About It)"
     description: "In my first post, I introduced the project I'm building for my data science portfolio and explained the architecture and tools I'm using."
