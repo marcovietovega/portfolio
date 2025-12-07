@@ -171,17 +171,17 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
               <tr>
                 <td>DATA501</td>
                 <td>Advanced Techniques in Data Science</td>
-                <td class="grade-a"></td>
+                <td class="grade-a-plus">A+</td>
               </tr>
               <tr>
                 <td>STAT432</td>
                 <td>Computational Statistics</td>
-                <td class="grade-a"></td>
+                <td class="grade-a">A</td>
               </tr>
               <tr>
                 <td>STAT438</td>
                 <td>Generalised Linear Models</td>
-                <td class="grade-a"></td>
+                <td class="grade-a">A</td>
               </tr>
             </tbody>
           </table>
