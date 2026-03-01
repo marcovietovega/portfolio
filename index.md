@@ -12,13 +12,13 @@ og_image: /assets/img/og-image.png
     <p>{{ site.hero.description }}</p>
 
     <div class="social-icons">
-      <a href="https://github.com/{{ site.author.social.github }}" target="_blank" title="GitHub">
+      <a href="https://github.com/{{ site.author.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://linkedin.com/in/{{ site.author.social.linkedin }}" target="_blank" title="LinkedIn">
+      <a href="https://linkedin.com/in/{{ site.author.social.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="mailto:{{ site.author.email }}" target="_blank" title="Email">
+      <a href="mailto:{{ site.author.email }}" target="_blank" rel="noopener noreferrer" title="Email">
         <i class="fas fa-envelope"></i>
       </a>
     </div>
@@ -48,12 +48,12 @@ og_image: /assets/img/og-image.png
           <p class="card-description">{{ project.description }}</p>
           <div class="project-links">
             {% if project.demo %}
-              <a href="{{ project.demo }}" target="_blank" class="btn-project btn-primary">
+              <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             {% endif %}
             {% if project.github %}
-              <a href="{{ project.github }}" target="_blank" class="btn-project btn-secondary">
+              <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="btn-project btn-secondary">
                 <i class="fab fa-github"></i> View Code
               </a>
             {% endif %}
@@ -94,7 +94,7 @@ og_image: /assets/img/og-image.png
           <p class="card-description">{{ post.description }}</p>
           <div class="project-links">
             {% if post.external %}
-              <a href="{{ post.link }}" target="_blank" class="btn-project btn-primary">
+              <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary">
                 <i class="fas fa-external-link-alt"></i> Read Article
               </a>
             {% else %}
