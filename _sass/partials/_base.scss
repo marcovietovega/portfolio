@@ -10,7 +10,52 @@
   --font-display: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+  --color-text-dark: #333;
+  --color-primary-dark: #005999;
+  --color-primary-hover: #005fa3;
+  --color-accent-warm-hover: #ffb814;
+  --color-card-solid: #181d22;
   --radius: 16px;
+}
+
+/* Shared Tag Styles */
+.tag, .skill-tag, .topic-tag, .interest-tag {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-dark);
+  padding: 0.38rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.02em;
+  cursor: default;
+}
+
+.tag:hover, .skill-tag:hover, .topic-tag:hover, .interest-tag:hover {
+  background: var(--color-primary);
+  color: var(--color-text);
+  box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
+}
+
+/* Shared Social Icon Base Styles */
+.social-icons a, .footer-social a {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-dark);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons a:hover, .footer-social a:hover {
+  background: var(--color-primary);
+  color: var(--color-text);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Base Styles */
@@ -74,7 +119,7 @@ a:focus:not(:focus-visible) {
 
 /* Page Header */
 .page-header {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #005999 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: white;
   padding: 4rem 0;
   text-align: center;
