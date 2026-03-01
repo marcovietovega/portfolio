@@ -48,26 +48,10 @@
   margin-bottom: 2rem;
 }
 
+/* Footer social — size overrides (base styles in _base.scss) */
 .footer-social a {
   width: 46px;
   height: 46px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.footer-social a:hover {
-  background: var(--color-primary);
-  color: var(--color-text);
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .footer-social a i {
