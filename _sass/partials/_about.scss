@@ -47,7 +47,7 @@
 }
 
 .about-text p {
-  text-align: left;
+  text-align: justify;
   font-size: 1.1rem;
   line-height: 1.7;
   color: var(--color-text-muted);
@@ -159,6 +159,7 @@
   font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+  text-align: justify;
   margin: 0;
 }
 
