@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Intersection Observer for animations
   const animatedElements = document.querySelectorAll(
-    ".fade-in, .slide-in, .section-reveal"
+    ".fade-in, .slide-in, .section-reveal, .fade-in-stagger"
   );
   const animationObserver = new IntersectionObserver(
     (entries) => {
