@@ -73,7 +73,7 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
           <div class="experience-item">
             <h4>Master of Data Science</h4>
             <p class="company">Victoria University of Wellington</p>
-            <p class="period">2024 – Present</p>
+            <p class="period">2024 – 2026</p>
             <p class="description">Advanced training in machine learning, statistical methods, and big data. Focused on analyzing complex data across disciplines and applying techniques to real-world problems.</p>
           </div>
           <div class="experience-item">
