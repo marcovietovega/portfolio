@@ -1,11 +1,37 @@
+/* CSS Custom Properties */
+:root {
+  --color-bg: #10151a;
+  --color-card: rgba(24, 29, 34, 0.85);
+  --color-primary: #007acc;
+  --color-primary-light: #4db3fa;
+  --color-text: #fff;
+  --color-text-muted: #aaa;
+  --color-accent-warm: #f0a500;
+  --font-display: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --radius: 16px;
+}
+
 /* Base Styles */
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Helvetica Neue", sans-serif;
+  font-family: var(--font-body);
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: #10151a;
-  color: #fff;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Keyboard focus states (accessibility) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* Container */
@@ -18,17 +44,28 @@ body {
 
 /* Typography */
 .section-title {
+  font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--color-text);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    margin: 0.75rem auto 0;
+    border-radius: 1px;
+  }
 }
 
 .section-subtitle {
   font-size: 1.1rem;
   text-align: center;
-  color: #aaa;
+  color: var(--color-text-muted);
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
@@ -37,20 +74,34 @@ body {
 
 /* Page Header */
 .page-header {
-  background: linear-gradient(135deg, #007acc 0%, #005999 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #005999 100%);
   color: white;
   padding: 4rem 0;
   text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, var(--color-bg));
+    z-index: 2;
+    pointer-events: none;
+  }
 }
 
 .page-title {
+  font-family: var(--font-display);
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .page-subtitle {
-  color: #aaa;
+  color: var(--color-text-muted);
   font-size: 1.2rem;
   opacity: 0.9;
   margin: 0 auto;
