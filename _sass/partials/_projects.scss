@@ -9,7 +9,7 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(16, 21, 26, 0.7) 35%,
+    rgba(16, 21, 26, 0.55) 35%,
     rgba(16, 21, 26, 0.95) 70%,
     rgba(16, 21, 26, 1) 100%
   );
@@ -36,21 +36,21 @@
 
 .project-card {
   position: relative;
-  background: rgba(24, 29, 34, 0.85);
-  border-radius: 16px;
+  background: var(--color-card);
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
   border: none;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: var(--color-text);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 .project-image {
@@ -77,8 +77,8 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(24, 29, 34, 0.82) 60%,
-    rgba(24, 29, 34, 0.98) 100%
+    rgba(24, 29, 34, 0.45) 50%,
+    rgba(24, 29, 34, 0.95) 100%
   );
   z-index: 1;
   pointer-events: none;
@@ -104,10 +104,11 @@
 }
 
 .project-title {
+  font-family: var(--font-display);
   text-align: left;
-  font-size: 1.35rem;
-  color: #fff;
-  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  font-weight: 700;
   margin: 0.4rem 0;
   line-height: 1.18;
   word-break: break-word;
@@ -120,8 +121,8 @@
 
 .project-description {
   font-size: 0.9rem;
-  text-align: justify;
-  color: #aaa;
+  text-align: left;
+  color: var(--color-text-muted);
   margin-bottom: 0rem;
   line-height: 1.4;
   word-break: break-word;
@@ -130,6 +131,8 @@
   max-height: 7em;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 
 .project-tags {
@@ -163,7 +166,7 @@
   background: rgba(255, 255, 255, 0.9);
   color: #333;
   padding: 0.5rem 1rem;
-  border-radius: 999px;
+  border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
@@ -175,15 +178,15 @@
 }
 
 .btn-project:hover {
-  background: #007acc;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-text);
   box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
   text-decoration: none;
 }
 
 /* Skills Section */
 .skills-section {
-  padding: 0 0rem 4rem 0rem;
+  padding: 3rem 0;
   background: transparent;
 }
 
@@ -195,20 +198,21 @@
 }
 
 .skill-category {
-  background: rgba(24, 29, 34, 0.85);
+  background: var(--color-card);
   padding: 2rem;
-  border-radius: 16px;
+  border-radius: var(--radius);
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
   text-align: center;
-  color: #fff;
+  color: var(--color-text);
   border: none;
 }
 
 .skill-category h3 {
+  font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .skills-list {
@@ -233,7 +237,14 @@
 }
 
 .skill-tag:hover {
-  background: #007acc;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-text);
   box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
+}
+
+/* Center orphan card in 2-column projects grid */
+.projects-grid > .project-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  justify-self: center;
 }
