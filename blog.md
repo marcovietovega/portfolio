@@ -34,7 +34,7 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
           <p class="card-description">{{ post.description }}</p>
           <div class="project-links">
             {% if post.external %}
-              <a href="{{ post.link }}" target="_blank" class="btn-project btn-primary">
+              <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary">
                 <i class="fas fa-external-link-alt"></i> Read Article
               </a>
             {% else %}
