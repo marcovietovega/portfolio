@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  --hero-overlay-darkness: 0.8;
 }
 
 .hero::before {
@@ -42,7 +41,7 @@
 
 .hero h2 {
   font-family: var(--font-display);
-  color: #e9ecef;
+  color: rgba(255, 255, 255, 0.9);
   margin-top: 0.5rem;
   font-size: 3rem;
   font-weight: 700;
@@ -56,28 +55,11 @@
   color: var(--color-text-muted);
 }
 
-/* Social Icons */
+/* Social Icons — size overrides (base styles in _base.scss) */
 .social-icons a {
   width: 60px;
   height: 60px;
   margin: 2.5rem 1.5rem;
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.social-icons a:hover {
-  background: var(--color-primary);
-  color: var(--color-text);
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .social-icons a i {
