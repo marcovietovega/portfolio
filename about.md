@@ -6,7 +6,7 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
 
 <div class="about-page">
 
-<section class="page-header" style="background: url('{{ '/assets/img/about-bg.jpg' | relative_url }}') center/cover no-repeat;">
+<section id="main-content" class="page-header" style="background: url('{{ '/assets/img/about-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">About Me</h1>
     <p class="page-subtitle">Data scientist focused on turning data into clear insights and practical solutions</p>
@@ -15,7 +15,7 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
 
 <section class="about-section">
   <div class="container">
-    <div class="about-content">
+    <div class="about-content fade-in">
       <div class="about-text">
         <h2 class="section-title">My Story</h2>
         <p>I am a data science master’s student with a background in software development and several years of experience in corporate environments. I enjoy exploring data, building models, and creating visualisations that explain insights clearly. My professional experience taught me how to design scalable solutions, collaborate with teams, and deliver tools that support real decision-making. Now my goal is to apply those skills to data science, focusing on statistics, machine learning, and visualisation to build solutions that are practical and valuable.</p>
@@ -48,8 +48,8 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
 
 <section class="experience-section">
   <div class="container">
-    <h2 class="section-title">Experience & Education</h2>
-    <div class="experience-grid">
+    <h2 class="section-title fade-in">Experience & Education</h2>
+    <div class="experience-grid fade-in-stagger">
       <div class="experience-category">
         <h3>Work Experience</h3>
         <div class="experience-list">
@@ -90,111 +90,218 @@ description: "About Marco Vieto Vega, data scientist passionate about turning co
 
 <section class="academic-performance-section">
   <div class="container">
-    <h2 class="section-title">Academic Performance</h2>
-    <p class="section-subtitle">Master of Data Science Course Grades</p>
-    
-    <div class="academic-years">
-      <div class="academic-year">
-        <h3>2024 Courses</h3>
-        <div class="grades-table">
-          <table class="grades-table-content">
-            <thead>
-              <tr>
-                <th>Course</th>
-                <th>Title</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>AIML420</td>
-                <td>Artificial Intelligence</td>
-                <td class="grade-a">A</td>
-              </tr>
-              <tr>
-                <td>AIML421</td>
-                <td>Machine Learning Tools and Techniques</td>
-                <td class="grade-a-plus">A+</td>
-              </tr>
-              <tr>
-                <td>AIML425</td>
-                <td>Neural Networks and Deep Learning</td>
-                <td class="grade-a-minus">A-</td>
-              </tr>
-              <tr>
-                <td>DATA471</td>
-                <td>Practical Data Science</td>
-                <td class="grade-a-plus">A+</td>
-              </tr>
-              <tr>
-                <td>DATA472</td>
-                <td>Data Management & Programming</td>
-                <td class="grade-a-plus">A+</td>
-              </tr>
-              <tr>
-                <td>STAT292</td>
-                <td>Applied Statistics</td>
-                <td class="grade-a">A</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+    <div class="academic-toggle" id="academicToggle" role="button" tabindex="0" aria-expanded="false" aria-controls="academicContent">
+      <div>
+        <span class="academic-toggle-text">Academic Performance</span>
+        <span class="academic-toggle-sub">Master of Data Science — Course Grades</span>
       </div>
-      
-      <div class="academic-year">
-        <h3>2025 Courses</h3>
-        <div class="grades-table">
-          <table class="grades-table-content">
-            <thead>
-              <tr>
-                <th>Course</th>
-                <th>Title</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>AIML427</td>
-                <td>Big Data</td>
-                <td class="grade-a">A</td>
-              </tr>
-              <tr>
-                <td>DATA473</td>
-                <td>Statistical Modelling for Data Science</td>
-                <td class="grade-a-plus">A+</td>
-              </tr>
-              <tr>
-                <td>DATA491</td>
-                <td>Mathematics for Data Science</td>
-                <td class="grade-a">A</td>
-              </tr>
-              <tr>
-                <td>DATA501</td>
-                <td>Advanced Techniques in Data Science</td>
-                <td class="grade-a-plus">A+</td>
-              </tr>
-              <tr>
-                <td>STAT432</td>
-                <td>Computational Statistics</td>
-                <td class="grade-a">A</td>
-              </tr>
-              <tr>
-                <td>STAT438</td>
-                <td>Generalised Linear Models</td>
-                <td class="grade-a">A</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="academic-toggle-icon">
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </div>
     </div>
+
+    <div class="academic-collapsible" id="academicContent" aria-hidden="true">
+      <div class="academic-collapsible-inner">
+
+        <h3 class="academic-year-heading">Year 1 <span>(2024)</span></h3>
+        <div class="academic-years">
+          <div class="academic-year">
+            <h3>Trimester 1</h3>
+            <div class="grades-table">
+              <table class="grades-table-content">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AIML420</td>
+                    <td>Artificial Intelligence</td>
+                    <td class="grade-a">A</td>
+                  </tr>
+                  <tr>
+                    <td>DATA472</td>
+                    <td>Data Management & Programming</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                  <tr>
+                    <td>STAT292</td>
+                    <td>Applied Statistics</td>
+                    <td class="grade-a">A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="academic-year">
+            <h3>Trimester 2</h3>
+            <div class="grades-table">
+              <table class="grades-table-content">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AIML421</td>
+                    <td>ML Tools and Techniques</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                  <tr>
+                    <td>AIML425</td>
+                    <td>Neural Networks and Deep Learning</td>
+                    <td class="grade-a-minus">A-</td>
+                  </tr>
+                  <tr>
+                    <td>DATA471</td>
+                    <td>Practical Data Science</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="academic-year-heading">Year 2 <span>(2025)</span></h3>
+        <div class="academic-years academic-years-three">
+          <div class="academic-year">
+            <h3>Trimester 1</h3>
+            <div class="grades-table">
+              <table class="grades-table-content">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AIML427</td>
+                    <td>Big Data</td>
+                    <td class="grade-a">A</td>
+                  </tr>
+                  <tr>
+                    <td>DATA473</td>
+                    <td>Statistical Modelling for Data</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                  <tr>
+                    <td>DATA491</td>
+                    <td>Mathematics for Data Science</td>
+                    <td class="grade-a">A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="academic-year">
+            <h3>Trimester 2</h3>
+            <div class="grades-table">
+              <table class="grades-table-content">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DATA501</td>
+                    <td>Advanced Tech in Data Science</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                  <tr>
+                    <td>STAT432</td>
+                    <td>Computational Statistics</td>
+                    <td class="grade-a">A</td>
+                  </tr>
+                  <tr>
+                    <td>STAT438</td>
+                    <td>Generalised Linear Models</td>
+                    <td class="grade-a">A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="academic-year">
+            <h3>Trimester 3</h3>
+            <div class="grades-table">
+              <table class="grades-table-content">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DATA480</td>
+                    <td>Research Prep for Data Science</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                  <tr>
+                    <td>DATA487</td>
+                    <td>Research Project</td>
+                    <td class="grade-a-plus">A+</td>
+                  </tr>
+                  <tr>
+                    <td>DATA581</td>
+                    <td>Data Science Practicum</td>
+                    <td class="grade-p">P</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.getElementById('academicToggle');
+  var content = document.getElementById('academicContent');
+  if (toggle && content) {
+    toggle.addEventListener('click', function() {
+      var isOpen = toggle.classList.contains('is-open');
+      toggle.classList.toggle('is-open');
+      content.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', !isOpen);
+      content.setAttribute('aria-hidden', isOpen);
+    });
+    toggle.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle.click();
+      }
+    });
+  }
+});
+</script>
+
 <section class="interests-section">
   <div class="container">
-    <h2 class="section-title">Interests & Hobbies</h2>
-    <div class="interests-grid">
+    <h2 class="section-title fade-in">Interests & Hobbies</h2>
+    <div class="interests-grid fade-in-stagger">
       <div class="interest-category">
         <h3>Professional Interests</h3>
         <div class="interests-list">
