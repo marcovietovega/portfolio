@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   background: transparent;
@@ -25,13 +25,13 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
 }
 
 .nav a {
   font-weight: 400;
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none;
   transition: color 0.2s ease;
   letter-spacing: 1px;
@@ -42,13 +42,42 @@
 }
 
 .nav a:hover {
-  color: #007acc;
+  color: var(--color-primary);
+  text-shadow: 0 0 12px rgba(0, 122, 204, 0.3);
 }
 
 .nav a.current {
-  color: #4db3fa;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: var(--color-primary-light);
   font-weight: 600;
   pointer-events: none;
   cursor: default;
+  text-shadow: 0 0 12px rgba(0, 122, 204, 0.3);
+}
+
+/* Skip-to-content link (accessibility) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+  background: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:focus {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
 }
