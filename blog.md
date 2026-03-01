@@ -6,7 +6,7 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
 
 <div class="blog-page">
 
-<section class="page-header" style="background: url('{{ '/assets/img/blog-bg.jpg' | relative_url }}') center/cover no-repeat;">
+<section id="main-content" class="page-header" style="background: url('{{ '/assets/img/blog-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">My Blog</h1>
     <p class="page-subtitle">Sharing practical lessons, projects, and ideas from my journey in data science and machine learning</p>
@@ -15,7 +15,7 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
 
 <section class="blog-section">
   <div class="container">
-    <div class="projects-grid">
+    <div class="projects-grid fade-in-stagger">
       {% for post in site.blog_posts %}
       <div class="card">
         <div class="card-image">
@@ -52,8 +52,8 @@ description: "Sharing practical lessons, projects, and ideas from my journey in 
 
 <section class="topics-section">
   <div class="container">
-    <h2 class="section-title">Topics I Write About  (and Plan to Explore)</h2>
-    <div class="topics-grid">
+    <h2 class="section-title fade-in">Topics I Write About  (and Plan to Explore)</h2>
+    <div class="topics-grid fade-in-stagger">
       <div class="topic-category">
         <h3>Data Science</h3>
         <div class="topics-list">
