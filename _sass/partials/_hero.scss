@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero {
-  color: #fff;
+  color: var(--color-text);
   text-align: center;
   padding: 0 2rem;
   position: relative;
@@ -33,23 +33,27 @@
 }
 
 .hero h1 {
+  font-family: var(--font-display);
   margin-bottom: 0;
-  font-size: 4.5rem;
-  font-weight: 900;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .hero h2 {
+  font-family: var(--font-display);
   color: #e9ecef;
   margin-top: 0.5rem;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 0;
 }
 
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #aaa;
+  color: var(--color-text-muted);
 }
 
 /* Social Icons */
@@ -70,12 +74,25 @@
 }
 
 .social-icons a:hover {
-  background: #007acc;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-text);
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .social-icons a i {
   font-size: 2rem;
+}
+
+/* Smooth hero-to-content gradient transition */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, var(--color-bg));
+  z-index: 0;
+  pointer-events: none;
 }
