@@ -29,7 +29,7 @@
 
 /* Topics Section */
 .topics-section {
-  padding: 0 0rem 4rem 0rem;
+  padding: 0 0 4rem;
   background: transparent;
 }
 
@@ -63,26 +63,6 @@
   flex-wrap: wrap;
   gap: 0.7rem;
   justify-content: center;
-}
-
-.topic-tag {
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  padding: 0.38rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  letter-spacing: 0.02em;
-  cursor: default;
-}
-
-.topic-tag:hover {
-  background: var(--color-primary);
-  color: var(--color-text);
-  box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
 }
 
 /* Center orphan card in 2-column blog grid */
