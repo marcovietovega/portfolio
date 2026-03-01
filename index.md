@@ -5,7 +5,7 @@ description: "Marco Vieto Vega - Data Scientist. Transforming data into insights
 og_image: /assets/img/og-image.png
 ---
 
-<section class="hero" style="background: url('{{ '/assets/img/hero.jpg' | relative_url }}') center/cover no-repeat;">
+<section id="main-content" class="hero" style="background: url('{{ '/assets/img/hero.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="hero-content">
     <h1>{{ site.hero.title }}</h1>
     <h2>{{ site.hero.subtitle}}</h2>
@@ -28,10 +28,10 @@ og_image: /assets/img/og-image.png
 
 <section class="featured-section">
   <div class="container">
-    <h2 class="section-title">{{ site.sections.projects.title }}</h2>
-    <p class="section-subtitle">{{ site.sections.projects.subtitle }}</p>
-    
-    <div class="cards-grid">
+    <h2 class="section-title fade-in">{{ site.sections.projects.title }}</h2>
+    <p class="section-subtitle fade-in">{{ site.sections.projects.subtitle }}</p>
+
+    <div class="cards-grid fade-in-stagger">
       {% assign featured_projects = site.projects | where: "featured", true %}
       {% for project in featured_projects %}
       <div class="card">
@@ -63,7 +63,7 @@ og_image: /assets/img/og-image.png
       {% endfor %}
     </div>
     
-    <div class="section-cta">
+    <div class="section-cta fade-in">
       <a href="{{ site.sections.projects.cta_link | relative_url }}" class="btn-primary">{{ site.sections.projects.cta_text }}</a>
     </div>
   </div>
@@ -71,10 +71,10 @@ og_image: /assets/img/og-image.png
 
 <section class="featured-section blog-section">
   <div class="container">
-    <h2 class="section-title">{{ site.sections.blog.title }}</h2>
-    <p class="section-subtitle">{{ site.sections.blog.subtitle }}</p>
-    
-    <div class="cards-grid">
+    <h2 class="section-title fade-in">{{ site.sections.blog.title }}</h2>
+    <p class="section-subtitle fade-in">{{ site.sections.blog.subtitle }}</p>
+
+    <div class="cards-grid fade-in-stagger">
       {% assign featured_blog_posts = site.blog_posts | where: "featured", true %}
       {% for post in featured_blog_posts %}
       <div class="card">
@@ -108,7 +108,7 @@ og_image: /assets/img/og-image.png
       {% endfor %}
     </div>
     
-    <div class="section-cta">
+    <div class="section-cta fade-in">
       <a href="{{ site.sections.blog.cta_link | relative_url }}" class="btn-primary">{{ site.sections.blog.cta_text }}</a>
     </div>
   </div>
