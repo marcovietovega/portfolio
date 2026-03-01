@@ -31,12 +31,12 @@ description: "A showcase of data science and machine learning projects by Marco 
           <p class="project-description">{{ project.description }}</p>
           <div class="project-links">
             {% if project.demo %}
-              <a href="{{ project.demo }}" target="_blank" class="btn-project btn-primary">
+              <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             {% endif %}
             {% if project.github %}
-              <a href="{{ project.github }}" target="_blank" class="btn-project btn-secondary">
+              <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="btn-project btn-secondary">
                 <i class="fab fa-github"></i> View Code
               </a>
             {% endif %}
