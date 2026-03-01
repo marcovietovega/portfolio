@@ -6,7 +6,7 @@ description: "A showcase of data science and machine learning projects by Marco 
 
 <div class="projects-page">
 
-<section class="page-header" style="background: url('{{ '/assets/img/projects-bg.jpg' | relative_url }}') center/cover no-repeat;">
+<section id="main-content" class="page-header" style="background: url('{{ '/assets/img/projects-bg.jpg' | relative_url }}') center/cover no-repeat;">
   <div class="container">
     <h1 class="page-title">My Projects</h1>
     <p class="page-subtitle">A collection of data science and machine learning projects showcasing my skills and expertise.</p>
@@ -15,7 +15,7 @@ description: "A showcase of data science and machine learning projects by Marco 
 
 <section class="projects-section">
   <div class="container">
-    <div class="projects-grid">
+    <div class="projects-grid fade-in-stagger">
       {% for project in site.projects %}
       <div class="project-card">
         <div class="project-image">
@@ -50,8 +50,8 @@ description: "A showcase of data science and machine learning projects by Marco 
 
 <section class="skills-section">
   <div class="container">
-    <h2 class="section-title">Technologies & Tools</h2>
-    <div class="skills-grid">
+    <h2 class="section-title fade-in">Technologies & Tools</h2>
+    <div class="skills-grid fade-in-stagger">
       <div class="skill-category">
         <h3>Programming Languages</h3>
         <div class="skills-list">
