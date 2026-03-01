@@ -45,8 +45,8 @@ projects:
     github: "https://github.com/marcovietovega/bestSelectR"
     featured: true
 
-  - title: "Senticheck: Bluesky Data Collection and Analysis [WIP]"
-    description: "Bluesky data collection and sentiment analysis project using Python, Airflow, and NLP. Currently in progress."
+  - title: "Senticheck: Bluesky Data Collection and Analysis"
+    description: "Bluesky data collection and sentiment analysis project using Python, Airflow, and NLP."
     image: "project6.jpg"
     tags: ["Python", "NLP", "Transformers", "Airflow"]
     github: "https://github.com/marcovietovega/Senticheck"
