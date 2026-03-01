@@ -7,22 +7,22 @@
   margin-bottom: 2rem;
 }
 
-/* Primary Button */
+/* Primary Button (CTA — warm accent) */
 .btn-primary {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background: var(--color-accent-warm);
+  color: #1a1a1a;
   padding: 0.8rem 2rem;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: #007acc;
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(77, 179, 250, 0.18);
+  background: #ffb814;
+  color: #1a1a1a;
+  box-shadow: 0 4px 16px rgba(240, 165, 0, 0.35);
   transform: translateY(-2px);
 }
 
@@ -55,9 +55,10 @@
 
 /* Secondary Button (for GitHub links) */
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.8);
   color: #333;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
 }
 
 .btn-secondary:hover {
@@ -69,14 +70,15 @@
 
 /* Override primary button styles for project links */
 .project-links .btn-primary {
-  background: #007acc;
-  color: #fff;
-  border: 1px solid #007acc;
+  background: rgba(0, 122, 204, 0.85);
+  color: var(--color-text);
+  border: 1px solid var(--color-primary);
+  backdrop-filter: blur(8px);
 }
 
 .project-links .btn-primary:hover {
   background: #005fa3;
-  color: #fff;
+  color: var(--color-text);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 122, 204, 0.3);
 }
