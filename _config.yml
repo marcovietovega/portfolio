@@ -38,7 +38,7 @@ sections:
     cta_link: "/blog"
 
 projects:
-  - title: "bestSelectR: R Package for Best Subset Selection in R [WIP]"
+  - title: "bestSelectR: R Package for Best Subset Selection in R"
     description: "An R package for best subset selection in logistic regression models, providing efficient algorithms using C++ and user-friendly functions in R."
     image: "project7.png"
     tags: ["Feature Selection", "R", "C++", "Package Development"]
